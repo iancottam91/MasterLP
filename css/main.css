@@ -21,6 +21,12 @@
 .pod-copy{
 	color: #fafafa;
 	font-size: 14px;
+	margin-bottom: 0;
+}
+.tncs{
+	color: #fafafa;
+	font-size: 12px;
+	text-decoration: none;
 }
 
 /* navigation styles */
@@ -59,6 +65,15 @@
 .cta-box{
 	background: #1e1e1e;
 	padding: 30px 0 30px 0;
+	position: relative;
+}
+.cta-wrapper{
+
+}
+.cta-wrapper-bottom{
+	position: absolute;
+	bottom: 5%;
+	right: 0;
 }
 .full-width{
 	background: #1e1e1e;
