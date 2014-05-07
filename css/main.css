@@ -1,0 +1,92 @@
+/* reuseable hooks */
+
+.text-right{
+	text-align: right;
+}
+
+/* font styles */
+
+.banner .header{
+	font-size: 75px;
+}
+.banner .sub-header{
+	font-size: 30px;
+}
+
+.pod-headline{
+	color: #ffb80c;
+	font-family: 'informa_medium', Arial, sans-serif;
+	font-size: 24px;
+}
+.pod-copy{
+	color: #fafafa;
+	font-size: 14px;
+}
+
+/* navigation styles */
+
+.navigation{
+	height: 16px;
+	padding-top: 6px;
+	padding-bottom: 8px;
+	margin-bottom: 18px;
+}
+.navigation a{
+	font-size: 12px;
+	color: #222;
+}
+
+.navigation p{
+	margin: 0;
+}
+
+.navigation img{
+	height: 16px;
+}
+
+/* banner styles */
+
+
+
+/* box styles */
+
+.instruction-box{
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 30px 30px 30px 60px;
+	margin-bottom: 4px;
+}
+.cta-box{
+	background: #1e1e1e;
+	padding: 30px 0 30px 0;
+}
+.full-width{
+	background: #1e1e1e;
+	padding: 30px 0 30px 30px;
+}
+
+
+/* arcade specific */
+
+.arcade .pod1{
+	background: url(../img/arcade_pod1.jpg) left bottom no-repeat #1e1e1e;
+}
+
+.arcade .pod2{
+	background: url(../img/arcade_pod2.jpg) left bottom no-repeat #1e1e1e;
+}
+
+.arcade .pod3{
+	background: url(../img/arcade_pod3.jpg) left bottom no-repeat #1e1e1e;
+}
+
+.arcade .navigation{
+	background: rgb(0,193,255);
+	background: -moz-linear-gradient(left, rgba(0,193,255,1) 0%, rgba(72,138,202,1) 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,193,255,1)), color-stop(100%,rgba(72,138,202,1)));
+	background: -webkit-linear-gradient(left, rgba(0,193,255,1) 0%,rgba(72,138,202,1) 100%);
+	background: -o-linear-gradient(left, rgba(0,193,255,1) 0%,rgba(72,138,202,1) 100%);
+	background: -ms-linear-gradient(left, rgba(0,193,255,1) 0%,rgba(72,138,202,1) 100%);
+	background: linear-gradient(to right, rgba(0,193,255,1) 0%,rgba(72,138,202,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c1ff', endColorstr='#488aca',GradientType=1 );
+}
