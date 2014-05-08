@@ -7,17 +7,15 @@
 
 .owl-item .item{
 	position: relative;
-	float: left;
-	display: inline;
-	margin-left: 4px;
-	margin-right: 4px;
+	margin-left: 2px;
+	margin-right: 2px;
 }
-.owl-item:first-child .item{
+/*.owl-item:first-child .item{
 	margin-left: 0;
 }
 .owl-item:last-child .item{
 	margin-right: 0;
-}
+}*/
 .owl-item img{
 	display: block;
 	width: 100%;
