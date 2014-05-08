@@ -76,12 +76,13 @@ LP.positionCta();
 
 	// call owl carousel
 
+
 	$("#carousel").owlCarousel({
  
 	    autoPlay: 3000, //Set AutoPlay to 3 seconds
 			 
-	    items : 6,
-	    itemsDesktop : [976,6],
+	    items : 4,
+	    itemsDesktop : [976,4],
 	    itemsDesktopSmall : [975,4],
 	    itemsMobile:	[479,2]
 	
