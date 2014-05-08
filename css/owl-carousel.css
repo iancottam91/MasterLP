@@ -9,7 +9,10 @@
 	position: relative;
 	margin-left: 2px;
 	margin-right: 2px;
+	/* May need to calculate a percentage that the width right should be */
 }
+
+
 /*.owl-item:first-child .item{
 	margin-left: 0;
 }

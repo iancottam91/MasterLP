@@ -80,8 +80,8 @@ LP.positionCta();
  
 	    autoPlay: 3000, //Set AutoPlay to 3 seconds
 			 
-	    items : 4,
-	    itemsDesktop : [976,4],
+	    items : 6,
+	    itemsDesktop : [976,6],
 	    itemsDesktopSmall : [975,4],
 	    itemsMobile:	[479,2]
 	
