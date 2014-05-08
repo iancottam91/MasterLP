@@ -3,7 +3,7 @@ var LP = (function(){
 
 	return{
 
-		equalheight: function(container){
+		equaliseColumnHeights: function(container){
 
 			var currentTallest = 0,
 			    currentRowStart = 0,
@@ -35,7 +35,25 @@ var LP = (function(){
 		},
 
 		positionCta: function(){
-			// if... add class cta-wrapper-bottom
+			var ctaWrapper = $('.cta-wrapper');
+
+			ctaWrapper.each( function(index, element){
+
+				var	ctaWrapperHeight = $(this).height(),
+					ctaBoxHeight = $(this).parent().outerHeight();
+
+				if(ctaBoxHeight <= 150){
+					console.log('middle');
+					$(this).css({"top" : "50%", "margin-top" : -ctaWrapperHeight/2 })
+				} else {
+					console.log('bottom');
+					$(this).css({"bottom" : ctaBoxHeight/10 })
+				}
+
+				console.log("cta wrapper height: " + ctaWrapperHeight);
+				console.log("cta box height: " + ctaBoxHeight);
+			});
+				
 		}
 
 	}
@@ -43,10 +61,30 @@ var LP = (function(){
 })();
 
 
-var equalClass = '.pod1, .pod2, .pod3 , .cta-box';
+var instructionBoxes = '.pod1, .pod2, .pod3 , .instruction-box.cta-box';
+var fullWidthBoxes = '.text-box, .full-width-container .cta-box';
 
 $(window).resize(function(){
-	LP.equalheight(equalClass);
+	LP.equaliseColumnHeights(instructionBoxes);
+	LP.equaliseColumnHeights(fullWidthBoxes);
 });
 
-LP.equalheight(equalClass);
+LP.equaliseColumnHeights(instructionBoxes);
+LP.equaliseColumnHeights(fullWidthBoxes);
+LP.positionCta();
+
+
+	// call owl carousel
+
+	$("#carousel").owlCarousel({
+ 
+	    autoPlay: 3000, //Set AutoPlay to 3 seconds
+			 
+	    items : 6,
+	    itemsDesktop : [976,6],
+	    itemsDesktopSmall : [975,4],
+	    itemsMobile:	[479,2]
+	
+	});
+
+	
