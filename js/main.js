@@ -54,6 +54,14 @@ var LP = (function(){
 				console.log("cta box height: " + ctaBoxHeight);
 			});
 				
+		},
+
+		positionBannerText: function(){
+			var headlineText = $('.text-container'),
+				banner = $('.banner'),
+				tenthOfBannerHeight = banner.height()/10;
+
+			headlineText.css({"bottom" : tenthOfBannerHeight, "left" : tenthOfBannerHeight})				
 		}
 
 	}
@@ -72,6 +80,7 @@ $(window).resize(function(){
 LP.equaliseColumnHeights(instructionBoxes);
 LP.equaliseColumnHeights(fullWidthBoxes);
 LP.positionCta();
+LP.positionBannerText();
 
 
 	// call owl carousel
@@ -81,8 +90,8 @@ LP.positionCta();
  
 	    autoPlay: 3000, //Set AutoPlay to 3 seconds
 			 
-	    items : 4,
-	    itemsDesktop : [976,4],
+	    items : 6,
+	    itemsDesktop : [976,6],
 	    itemsDesktopSmall : [975,4],
 	    itemsMobile:	[479,2]
 	

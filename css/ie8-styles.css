@@ -1,0 +1,8 @@
+/* header trapezium fallback */
+
+.arcade .banner.third{
+	background: url(../img/ie8_arcade_trapezium_3.png) no-repeat;
+}
+.arcade .banner.fourth{
+	background: url(../img/ie8_arcade_trapezium_4.png) no-repeat;
+}

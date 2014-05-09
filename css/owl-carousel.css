@@ -5,10 +5,14 @@
 
 /* Betfair styles */
 
+.owl-wrapper{
+	left: -4px;
+}
+
 .owl-item .item{
 	position: relative;
-	margin-left: 2px;
-	margin-right: 2px;
+	box-sizing: border-box;
+	padding: 0 4px;
 	/* May need to calculate a percentage that the width right should be */
 }
 

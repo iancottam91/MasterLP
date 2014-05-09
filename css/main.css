@@ -15,13 +15,22 @@
 .margin-bottom-large{
 	margin-bottom: 8px;
 }
+.orange{
+	color: #ffb80c;
+}
+
 /* font styles */
 
-.banner .header{
+.banner .headline{
+	margin-bottom: 0;
+	text-transform: uppercase;
 	font-size: 75px;
+	line-height: 61px;
 }
 .banner .sub-header{
 	font-size: 30px;
+	margin-bottom: 0;
+	margin-top: 15px;
 }
 .pod-headline{
 	color: #ffb80c;
@@ -37,6 +46,12 @@
 	color: #fafafa;
 	font-size: 12px;
 	text-decoration: none;
+}
+.informa{
+	font-family: 'informa_medium', Arial, sans-serif;
+}
+.block-reg{
+	font-family: 'block_regular', sans-serif;
 }
 
 /* navigation styles */
@@ -62,7 +77,33 @@
 
 /* banner styles */
 
-
+.banner{
+ 	height: 288px;
+ 	position: absolute;
+	display: block;
+	float: none;
+	left: 0;
+}
+.banner-background{
+ 	height: 288px;
+ 	background: url(../img/headerImg.jpg);
+}
+.banner-trapezium{
+	border-right: 288px solid transparent;
+}
+.third .banner-trapezium{
+	width: 33.3%;
+}
+.fourth .banner-trapezium{
+	width: 25%;
+}
+.banner .text-container{
+	position: absolute;
+	color: #fafafa;
+	/*width: 445px;*/
+	width: 47%;
+	max-height: 235px;
+}
 
 /* box styles */
 
@@ -97,6 +138,10 @@
 
 /* arcade specific */
 
+.arcade .banner-trapezium{
+	border-bottom: 288px solid rgba(0,193,255, 0.85);
+}
+
 .arcade .pod1{
 	background: url(../img/arcade_pod1.jpg) left bottom no-repeat #1e1e1e;
 }
@@ -119,3 +164,20 @@
 	background: linear-gradient(to right, rgba(0,193,255,1) 0%,rgba(72,138,202,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c1ff', endColorstr='#488aca',GradientType=1 );
 }
+
+/* Responsive */
+@media only screen and (max-width: 767px) {
+	.banner{
+		position: static;
+	}
+	.container .banner-trapezium{
+		border: none;
+	}
+	
+	/* arcade specific */
+	.arcade .banner{
+		background: rgb(0,193,255);
+	}
+}
+
+
