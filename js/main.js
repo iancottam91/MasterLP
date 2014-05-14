@@ -39,19 +39,15 @@ var LP = (function(){
 
 			ctaWrapper.each( function(index, element){
 
-				var	ctaWrapperHeight = $(this).height(),
+				var	ctaButtonHeight = $(this).find('.cta-button').height(),
 					ctaBoxHeight = $(this).parent().outerHeight();
 
 				if(ctaBoxHeight <= 150){
-					console.log('middle');
-					$(this).css({"top" : "50%", "margin-top" : -ctaWrapperHeight/2 })
+					$(this).css({"top" : "50%", "margin-top" : -ctaButtonHeight/2 })
 				} else {
-					console.log('bottom');
 					$(this).css({"bottom" : ctaBoxHeight/10 })
 				}
 
-				console.log("cta wrapper height: " + ctaWrapperHeight);
-				console.log("cta box height: " + ctaBoxHeight);
 			});
 				
 		},
@@ -82,18 +78,19 @@ LP.equaliseColumnHeights(fullWidthBoxes);
 LP.positionCta();
 LP.positionBannerText();
 
+// Call fit text on the banner headline
+fitText(".headline", {'increment': 1, 'maxSize': 75, 'lhratio': 0.81});
 
-	// call owl carousel
+// Call owl carousel
 
+$("#carousel").owlCarousel({
 
-	$("#carousel").owlCarousel({
- 
-	    autoPlay: 3000, //Set AutoPlay to 3 seconds
-			 
-	    items : 6,
-	    itemsDesktop : [976,6],
-	    itemsDesktopSmall : [975,4],
-	    itemsMobile:	[479,2]
-	
-	});
+    autoPlay: 3000, //Set AutoPlay to 3 seconds
+		 
+    items : 6,
+    itemsDesktop : [976,6],
+    itemsDesktopSmall : [975,4],
+    itemsMobile:	[479,2]
+
+});
 

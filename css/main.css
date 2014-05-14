@@ -26,9 +26,11 @@
 	text-transform: uppercase;
 	font-size: 75px;
 	line-height: 61px;
+	display: inline-block;
 }
 .banner .sub-header{
 	font-size: 30px;
+	line-height: 30px;
 	margin-bottom: 0;
 	margin-top: 15px;
 }
@@ -40,6 +42,7 @@
 .pod-copy{
 	color: #fafafa;
 	font-size: 14px;
+	line-height: normal;
 	margin-bottom: 0;
 }
 .tncs{
@@ -64,7 +67,7 @@
 }
 .navigation a{
 	font-size: 12px;
-	color: #222;
+	color: #fafafa;
 }
 
 .navigation p{
@@ -101,10 +104,14 @@
 	position: absolute;
 	color: #fafafa;
 	/*width: 445px;*/
-	width: 47%;
 	max-height: 235px;
 }
-
+.third .text-container{
+	width: 46%;
+}
+.fourth .text-container{
+	width: 38%;
+}
 /* box styles */
 
 .instruction-box{
@@ -117,6 +124,7 @@
 	background: #1e1e1e;
 	padding: 30px 0 30px 0;
 	position: relative;
+	box-sizing: content-box;
 }
 .cta-wrapper{
 	position: absolute;
@@ -135,6 +143,17 @@
 	background: #1e1e1e;
 }
 
+.container .instruction-box.version-2{
+	background: #1e1e1e;
+	padding: 30px;
+}
+.version-2 .pod-headline{
+	color: #fafafa;
+}
+.version-2 .number{
+	color: #0099ff;
+	font-family: 'block_regular', sans-serif;
+}
 
 /* arcade specific */
 
@@ -154,6 +173,10 @@
 	background: url(../img/arcade_pod3.jpg) left bottom no-repeat #1e1e1e;
 }
 
+.arcade .version-2 .number{
+	color: #0099ff;
+}
+
 .arcade .navigation{
 	background: rgb(0,193,255);
 	background: -moz-linear-gradient(left, rgba(0,193,255,1) 0%, rgba(72,138,202,1) 100%);
@@ -168,15 +191,43 @@
 /* Responsive */
 @media only screen and (max-width: 767px) {
 	.banner{
+		position: relative;
+		height: auto;
+	}
+	.container .banner-trapezium{
+		width: 100%;
+	}
+	.banner-trapezium .text-container {
 		position: static;
+		width: 100%;
+		padding: 30px;
+		max-height: none;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	.banner .cta-wrapper{
+		position: static;
+		margin-bottom: 20px;
 	}
 	.container .banner-trapezium{
 		border: none;
+	}
+	.cta-box{
+		min-height: 100px;
+	}
+	.cta-wrapper{
+		width: 100%;
+	}
+	.cta-wrapper a{
+		width: 100%;
 	}
 	
 	/* arcade specific */
 	.arcade .banner{
 		background: rgb(0,193,255);
+	}
+	.reponsive-break{
+		display: none;
 	}
 }
 
