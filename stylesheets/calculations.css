@@ -1,0 +1,8 @@
+/* line 1, ../sass/calculations.scss */
+.headline {
+  font-size: 20px;
+}
+/* line 3, ../sass/calculations.scss */
+.headline .play {
+  font-weight: normal;
+}
