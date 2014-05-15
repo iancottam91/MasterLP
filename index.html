@@ -3,12 +3,18 @@
 	<head>
 		<meta name="keywords" content="" />
 		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>LP Template</title>
 		
 		<!-- scripts -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script type="text/javascript" src="https://cache.promotions.betfair.com/media/english_uk/files/js/stately_1.09.js"></script>
 		<script type="text/javascript" src="https://cache.promotions.betfair.com/media/english_uk/files/js/bflp_1.13h.js"></script>
+		<script type="text/javascript">
+			LP.set('wmid',0000);
+			LP.set('redirectParams',{'optin':'submit','select':'','soft':'n'});
+			LP.start();
+		</script>
 
 		<!--[if lt IE 9]>
 			<script src="js/html5shiv.min.js"></script>
@@ -24,16 +30,49 @@
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/calculations.css">
 		<link rel="stylesheet" href="css/owl-carousel.css">
+		<link rel="stylesheet" href="css/overlay.css">
 	</head>
 
 	<style type="text/css">
-		@font-face {font-family: 'block_regular'; src: url('/media/english_uk/fonts/block-en.eot'); src: url('/media/english_uk/fonts/block-en.eot?#iefix') format('embedded-opentype'), url('/media/english_uk/fonts/block-en.woff') format('woff'), url('/media/english_uk/fonts/block-en.ttf') format('truetype'); font-weight: normal; font-style: normal; } h1, h2, h3, h4, h5, h6, h7, h8 {font-weight: normal; font-style: normal;} h1, h2, h3, h4, h5, h6, h7, h8 {font-weight: normal; font-style: normal;} 
-		@font-face {font-family: 'informa_regular'; src: url('/media/english_uk/fonts/informaproregular-en.eot'); src: url('/media/english_uk/fonts/informaproregular-en.eot?#iefix') format('embedded-opentype'), url('/media/english_uk/fonts/informaproregular-en.woff') format('woff'), url('/media/english_uk/fonts/informaproregular-en.ttf') format('truetype'); font-weight: normal; font-style: normal; } h1, h2, h3, h4, h5, h6, h7, h8 {font-weight: normal; font-style: normal;}
-		@font-face {font-family: 'informa_medium'; src: url('/media/english_uk/fonts/informapromedium-en.eot'); src: url('/media/english_uk/fonts/informapromedium-en.eot?#iefix') format('embedded-opentype'), url('/media/english_uk/fonts/informapromedium-en.woff') format('woff'), url('/media/english_uk/fonts/informapromedium-en.ttf') format('truetype'); font-weight: normal; font-style: normal; } h1, h2, h3, h4, h5, h6, h7, h8 {font-weight: normal; font-style: normal;}
-		@font-face {font-family: 'informa_bold'; src: url('/media/english_uk/fonts/informaprobold-en.eot'); src: url('/media/english_uk/fonts/informaprobold-en.eot?#iefix') format('embedded-opentype'), url('/media/english_uk/fonts/informaprobold-en.woff') format('woff'), url('/media/english_uk/fonts/informaprobold-en.ttf') format('truetype'); font-weight: normal; font-style: normal; } h1, h2, h3, h4, h5, h6, h7, h8 {font-weight: normal; font-style: normal;}
+		@font-face {font-family: 'block_regular'; src: url('https://cache.promotions.betfair.com/media/english_uk/fonts/block-en.eot'); src: url('https://cache.promotions.betfair.com/media/english_uk/fonts/block-en.eot?#iefix') format('embedded-opentype'), url('https://cache.promotions.betfair.com/media/english_uk/fonts/block-en.woff') format('woff'), url('https://cache.promotions.betfair.com/media/english_uk/fonts/block-en.ttf') format('truetype'); font-weight: normal; font-style: normal; } h1, h2, h3, h4, h5, h6, h7, h8 {font-weight: normal; font-style: normal;} h1, h2, h3, h4, h5, h6, h7, h8 {font-weight: normal; font-style: normal;} 
+		@font-face {font-family: 'informa_regular'; src: url('https://cache.promotions.betfair.com/media/english_uk/fonts/informaproregular-en.eot'); src: url('https://cache.promotions.betfair.com/media/english_uk/fonts/informaproregular-en.eot?#iefix') format('embedded-opentype'), url('https://cache.promotions.betfair.com/media/english_uk/fonts/informaproregular-en.woff') format('woff'), url('https://cache.promotions.betfair.com/media/english_uk/fonts/informaproregular-en.ttf') format('truetype'); font-weight: normal; font-style: normal; } h1, h2, h3, h4, h5, h6, h7, h8 {font-weight: normal; font-style: normal;}
+		@font-face {font-family: 'informa_medium'; src: url('https://cache.promotions.betfair.com/media/english_uk/fonts/informapromedium-en.eot'); src: url('https://cache.promotions.betfair.com/media/english_uk/fonts/informapromedium-en.eot?#iefix') format('embedded-opentype'), url('https://cache.promotions.betfair.com/media/english_uk/fonts/informapromedium-en.woff') format('woff'), url('https://cache.promotions.betfair.com/media/english_uk/fonts/informapromedium-en.ttf') format('truetype'); font-weight: normal; font-style: normal; } h1, h2, h3, h4, h5, h6, h7, h8 {font-weight: normal; font-style: normal;}
+		@font-face {font-family: 'informa_bold'; src: url('https://cache.promotions.betfair.com/media/english_uk/fonts/informaprobold-en.eot'); src: url('https://cache.promotions.betfair.com/media/english_uk/fonts/informaprobold-en.eot?#iefix') format('embedded-opentype'), url('https://cache.promotions.betfair.com/media/english_uk/fonts/informaprobold-en.woff') format('woff'), url('https://cache.promotions.betfair.com/media/english_uk/fonts/informaprobold-en.ttf') format('truetype'); font-weight: normal; font-style: normal; } h1, h2, h3, h4, h5, h6, h7, h8 {font-weight: normal; font-style: normal;}
 	</style>
 
 	<body class="arcade">
+
+		<!-- overlay login box -->
+		<div class="container">
+			<div id="login-box" class="container overlay-message hide">
+				<div class="three columns box-pad"></div>
+				<div class="popup-content">
+					<div class="five columns box left">
+						<form>
+							<div class="session-n expired-n loaded-y">		
+								<h2>Log In</h2>
+								<input placeholder="Betfair username" id="username" type="text" />
+								<input placeholder="Betfair password" id="password" type="password" />
+								<p class="forgotten-info text-center">Forgotten your <a href="https://identitysso.betfair.com/view/recoverusername" target="_blank">Username</a>/<a href="https://identitysso.betfair.com/view/recoverpassword" target="_blank">Password</a>?</p>
+							</div>
+							<div class="cta-wrapper-modal" >
+								<a href="#" class="btn btn-primary arrows session-n optinbutton">Log In</a>
+							</div>		
+						</form>
+					</div>
+					<div class="five columns box right">
+						<div class="modal-close close-button">x</div>
+						<h2>New to Betfair?</h2>
+						<p>You need to open an account before you can play for real money.</p>
+						<p>Opening an account only takes a few minutes.</p>
+						<div class="cta-wrapper-modal" >
+							<a class="btn btn-primary arrows" href="#">Join now</a>
+						</div>
+					</div>
+				</div>
+				<div class="three columns box-pad"></div>		
+			</div>
+		</div>
 		<nav class="navigation">
 			<div class="container">
 				<div class="eight columns">
@@ -50,14 +89,19 @@
 			<div class="sixteen columns banner third margin-bottom-small">
 				<div class="banner-trapezium">
 					<div class="text-container">
-						<h1 class="headline">£20K <br class="reponsive-break">First Friday</h1>
+						<h1 class="headline">&pound;20K <br class="reponsive-break">First Friday Fun</h1>
 						<!-- <h1 class="headline orange">£20K <br class="reponsive-break">First Friday</h1> -->
 						<p class="sub-header informa">7<sup>th</sup> March is a day of the month</p>
 						<!-- <p class="sub-header block-reg">7<sup>th</sup> March</p> -->
 					</div>
 				</div>
 				<div class="cta-wrapper text-right">
-					<a class="btn btn-large btn-primary arrows loaded-y" href="#">Play now</a>
+					<!-- Button to launch login box -->
+					<a data-target="login-box" class="btn btn-large btn-primary arrows optin-n session-n loaded-y modal-open" href="#">Opt In</a>
+					<!-- Button to opt in box -->
+					<a data-target="login-box" class="btn btn-large btn-primary arrows optin-n session-y loaded-y optinbutton" href="#">Opt In</a>
+					<!-- Button to link to the promotion once logged in -->
+					<a data-target="login-box" class="btn btn-large btn-primary arrows optin-y session-y loaded-y" href="#">Play now</a>
 				</div>
 			</div>
 		</header>
@@ -67,13 +111,13 @@
 			<div class="sixteen columns banner fourth margin-bottom-small">
 				<div class="banner-trapezium">
 					<div class="text-container">
-						<h1 class="headline orange">£2 Million <br class="reponsive-break">Reward Pot</h1>
+						<h1 class="headline orange">&pound;2 Million <br class="reponsive-break">Reward Pot</h1>
 						<!-- <p class="sub-header informa">7<sup>th</sup> March is a day of the month</p> -->
 						<!-- <p class="sub-header block-reg">7<sup>th</sup> March</p> -->
 					</div>
 				</div>
 				<div class="cta-wrapper text-right">
-					<a class="btn btn-large btn-primary arrows loaded-y" href="#">Play now</a>
+					<a class="btn btn-large btn-primary arrows" href="#">Play now</a>
 				</div>
 			</div>
 		</header>
@@ -109,7 +153,7 @@
 				<p class="pod-copy">14-18px Body text, Informa Pro.</p>
 			</div>
 			<div class="four columns instruction-box cta-box">
-				<div class="cta-wrapper text-right">
+				<div class="cta-wrapper text-center">
 					<div class="cta-button"><a class="btn btn-large btn-primary arrows" href="#">Play now</a></div>
 					<a class="tncs" href="#">Terms and conditions</a>
 				</div>
@@ -129,7 +173,7 @@
 				<p class="pod-copy">14-18px Body text, Informa Pro.14-18px Body text, Informa Pro.14-18px Body text, Informa Pro.</p>
 			</div>
 			<div class="four columns instruction-box cta-box text-right">
-				<div class="cta-wrapper text-right">
+				<div class="cta-wrapper text-center">
 					<div class="cta-button"><a class="btn btn-large btn-primary arrows" href="#">Play now</a></div>
 					<a class="tncs" href="#">Terms and conditions</a>
 				</div>
@@ -149,7 +193,7 @@
 				<p class="pod-copy">14-18px Body text, Informa Pro.</p>
 			</div>
 			<div class="four columns instruction-box cta-box">
-				<div class="cta-wrapper text-right">
+				<div class="cta-wrapper text-center">
 					<div class="cta-button"><a class="btn btn-large btn-primary arrows" href="#">Play now</a></div>
 					<a class="tncs" href="#">Terms and conditions</a>
 				</div>
@@ -169,7 +213,7 @@
 				<p class="pod-copy">14-18px Body text, Informa Pro.14-18px Body text, Informa Pro.14-18px Body text, Informa Pro.</p>
 			</div>
 			<div class="four columns instruction-box cta-box text-right">
-				<div class="cta-wrapper text-right">
+				<div class="cta-wrapper text-center">
 					<div class="cta-button"><a class="btn btn-large btn-primary arrows" href="#">Play now</a></div>
 					<a class="tncs" href="#">Terms and conditions</a>
 				</div>
@@ -183,7 +227,7 @@
 					<p class="pod-copy">14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro.</p>
 				</div>
 				<div class="four columns cta-box text-right margin-right-zero">
-					<div class="cta-wrapper text-right">
+					<div class="cta-wrapper text-center">
 						<div class="cta-button"><a class="btn btn-large btn-primary arrows" href="#">Play now</a></div>
 						<a class="tncs" href="#">Terms and conditions</a>
 					</div>
@@ -201,7 +245,7 @@
 					<p class="pod-copy">14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro.</p>
 				</div>
 				<div class="four columns cta-box text-right margin-right-zero">
-					<div class="cta-wrapper text-right">
+					<div class="cta-wrapper text-center">
 						<div class="cta-button"><a class="btn btn-large btn-primary arrows" href="#">Play now</a></div>
 						<a class="tncs" href="#">Terms and conditions</a>
 					</div>
@@ -300,8 +344,10 @@
 				</div>
 			</div>
 		</footer>
+
 		<script type="text/javascript" src="js/owl-carousel.js"></script>
 		<script type="text/javascript" src="js/fitText.js"></script>
+		<script type="text/javascript" src="js/overlay.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>

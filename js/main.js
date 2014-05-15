@@ -94,3 +94,7 @@ $("#carousel").owlCarousel({
 
 });
 
+// Call Modal Plugin
+
+$('.modal-open').modalise({closeButton: false});
+

@@ -3,6 +3,9 @@
 .text-right{
 	text-align: right;
 }
+.text-center{
+	text-align: center;
+}
 .container .margin-left-zero{
 	margin-left: 0;
 }
@@ -89,7 +92,7 @@
 }
 .banner-background{
  	height: 288px;
- 	background: url(../img/headerImg.jpg);
+ 	background: url('../img/headerImg.jpg');
 }
 .banner-trapezium{
 	border-right: 288px solid transparent;
@@ -112,6 +115,7 @@
 .fourth .text-container{
 	width: 38%;
 }
+
 /* box styles */
 
 .instruction-box{
@@ -153,6 +157,73 @@
 .version-2 .number{
 	color: #0099ff;
 	font-family: 'block_regular', sans-serif;
+}
+
+/* overlay styles */
+
+.box-pad{
+	height: 1px;
+}
+.overlay-message{
+	top: 100px;
+}
+.overlay-message .box{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding: 20px;
+	background-color: #000000;
+	position: relative;
+	height: 260px;
+	border: 1px solid #333;
+	outline: 1px solid #000;
+}
+.overlay-message .left{
+	margin-right: 0;
+}
+.overlay-message .right{
+	margin-left: 0;
+	font-size: 15px;
+	line-height: 1;
+}
+.popup-content{
+	color: #ffffff;
+}
+.popup-content h2{
+	font-size: 24px;
+	line-height: 21px;
+	margin-bottom: 30px;
+}
+.close-button{
+	font-size: 24px;
+	color: #fff;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	padding: 10px;
+	cursor: pointer
+}
+#username{
+	margin-bottom: 10px;
+	width: 100%;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#password{
+	margin-bottom: 0;
+	width: 100%;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.forgotten-info{
+	font-size: 12px;
+}
+.forgotten-info a{
+	color: #6495ED;
+}
+.cta-wrapper-modal{
+	position: absolute;
+	right: 0;
+	bottom: 10%;
 }
 
 /* arcade specific */
@@ -229,6 +300,12 @@
 	.reponsive-break{
 		display: none;
 	}
+
+	/* overlay */
+	.close-button {
+		top: -260px;
+	}
+
 }
 
 
