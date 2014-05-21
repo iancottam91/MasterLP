@@ -228,10 +228,6 @@
 
 /* arcade specific */
 
-.arcade .banner-trapezium{
-	border-bottom: 288px solid rgba(0,193,255, 0.85);
-}
-
 .arcade .pod1{
 	background: url(../img/arcade_pod1.jpg) left bottom no-repeat #1e1e1e;
 }
@@ -242,21 +238,6 @@
 
 .arcade .pod3{
 	background: url(../img/arcade_pod3.jpg) left bottom no-repeat #1e1e1e;
-}
-
-.arcade .version-2 .number{
-	color: #0099ff;
-}
-
-.arcade .navigation{
-	background: rgb(0,193,255);
-	background: -moz-linear-gradient(left, rgba(0,193,255,1) 0%, rgba(72,138,202,1) 100%);
-	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,193,255,1)), color-stop(100%,rgba(72,138,202,1)));
-	background: -webkit-linear-gradient(left, rgba(0,193,255,1) 0%,rgba(72,138,202,1) 100%);
-	background: -o-linear-gradient(left, rgba(0,193,255,1) 0%,rgba(72,138,202,1) 100%);
-	background: -ms-linear-gradient(left, rgba(0,193,255,1) 0%,rgba(72,138,202,1) 100%);
-	background: linear-gradient(to right, rgba(0,193,255,1) 0%,rgba(72,138,202,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c1ff', endColorstr='#488aca',GradientType=1 );
 }
 
 /* Responsive */

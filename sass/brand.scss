@@ -1,0 +1,32 @@
+$arcade-gradient-a: rgb(0,193,255);
+$arcade-gradient-b: rgb(72,138,202);
+$arcade-pod-number-color: rgb(0,153,255);
+
+
+@mixin linear-gradient($gradient-a, $gradient-b) {
+	background: $gradient-a;
+	background: -moz-linear-gradient(left, $gradient-a 0%, $gradient-b 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,$gradient-a), color-stop(100%,$gradient-b));
+	background: -webkit-linear-gradient(left, $gradient-a 0%,$gradient-b 100%);
+	background: -o-linear-gradient(left, $gradient-a 0%,$gradient-b 100%);
+	background: -ms-linear-gradient(left, $gradient-a 0%,$gradient-b 100%);
+	background: linear-gradient(to right, $gradient-a 0%,$gradient-b 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c1ff', endColorstr='#488aca',GradientType=1 );
+}
+
+@mixin trapezium($red,$green,$blue,$alpha){
+	border-bottom: 288px solid rgb($red,$green,$blue);
+	border-bottom: 288px solid rgba($red,$green,$blue,$alpha);
+}
+
+.arcade .navigation{
+	@include linear-gradient($arcade-gradient-a, $arcade-gradient-b); 
+}
+
+.arcade .banner-trapezium{
+	@include trapezium(0,193,255,0.85);
+}
+
+.arcade .version-2 .number{
+	color: $arcade-pod-number-color;
+}

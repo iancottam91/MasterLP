@@ -43,23 +43,9 @@
 
         }
 
-        // function normaliseToMinHeight(){
-        //     var headlines = $('.headline'),
-        //         headlineSizes = [];
-
-        //     headlines.each(function(){
-        //         headlineSizes.push($(this).css('font-size').replace(/[^-\d\.]/g, ''));
-        //     });
-
-        //     var minFontSize = Math.min.apply(null, headlineSizes);
-        //     console.log(minFontSize);
-        //     headlines.css({'font-size': minFontSize });
-        // }
-
 
         function setSizes(lhratio) {
             elt.css('font-size', i + 'px');
-            console.log(lhratio);
             elt.css('line-height', i*lhratio + 'px');
         }
 
@@ -110,7 +96,6 @@
     $.fn.fitText = function(inc,maxSize,lhratio) {
         var inc = inc || 0.2;
         var lhratio = lhratio || 1;
-        console.log('here');
         return this.each(function() {
             fitItem($(this), inc, maxSize, lhratio);
         });

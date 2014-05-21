@@ -1,0 +1,19 @@
+.arcade .navigation {
+  background: #00c1ff;
+  background: -moz-linear-gradient(left, #00c1ff 0%, #488aca 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #00c1ff), color-stop(100%, #488aca));
+  background: -webkit-linear-gradient(left, #00c1ff 0%, #488aca 100%);
+  background: -o-linear-gradient(left, #00c1ff 0%, #488aca 100%);
+  background: -ms-linear-gradient(left, #00c1ff 0%, #488aca 100%);
+  background: linear-gradient(to right, #00c1ff 0%, #488aca 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00c1ff', endColorstr='#488aca',GradientType=1 );
+}
+
+.arcade .banner-trapezium {
+  border-bottom: 288px solid #00c1ff;
+  border-bottom: 288px solid rgba(0, 193, 255, 0.85);
+}
+
+.arcade .version-2 .number {
+  color: #0099ff;
+}
