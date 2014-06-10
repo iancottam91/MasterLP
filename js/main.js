@@ -35,17 +35,17 @@ var LP = (function(){
 		},
 
 		positionCta: function(){
-			var ctaWrapper = $('.cta-wrapper');
+			var ctaWrapper = $('.cta-box .cta-wrapper');
 
 			ctaWrapper.each( function(index, element){
 
 				var	ctaButtonHeight = $(this).find('.cta-button').height(),
 					ctaBoxHeight = $(this).parent().outerHeight();
 
-				if(ctaBoxHeight <= 150){
+				if(ctaBoxHeight <= 400){
 					$(this).css({"top" : "50%", "margin-top" : -ctaButtonHeight/2 })
 				} else {
-					$(this).css({"bottom" : ctaBoxHeight/10 })
+					$(this).css({"top" : ctaBoxHeight/10 })
 				}
 
 			});
@@ -64,17 +64,16 @@ var LP = (function(){
 
 })();
 
-
-var instructionBoxes = '.pod1, .pod2, .pod3 , .instruction-box.cta-box';
+var pods = '.pod, .instruction-box.cta-box';
 var fullWidthBoxes = '.text-box, .full-width-container .cta-box';
 
 $(window).resize(function(){
-	LP.equaliseColumnHeights(instructionBoxes);
 	LP.equaliseColumnHeights(fullWidthBoxes);
+	LP.equaliseColumnHeights(pods);
 });
 
-LP.equaliseColumnHeights(instructionBoxes);
 LP.equaliseColumnHeights(fullWidthBoxes);
+LP.equaliseColumnHeights(pods);
 LP.positionCta();
 LP.positionBannerText();
 

@@ -1,3 +1,4 @@
+/* arcade */
 .arcade .navigation {
   background: #00c1ff;
   background: -moz-linear-gradient(left, #00c1ff 0%, #488aca 100%);
@@ -16,4 +17,155 @@
 
 .arcade .version-2 .number {
   color: #0099ff;
+}
+
+.arcade .pod {
+  background: url(../img/pod_triangle.png) left bottom no-repeat #1e1e1e;
+  background: url(../img/pod_triangle.png) left bottom no-repeat rgba(30, 30, 30, 0.92);
+}
+
+.arcade .brand-img {
+  width: 154px;
+  height: 16px;
+  display: block;
+  background: url(https://cache.promotions.betfair.com/media/english_uk/files/betgamecrm_353/images/logo-arcade-white.png);
+  background-size: 154px 16px;
+}
+
+.arcade .banner-background {
+  background: url(../img/arcade_header.jpg);
+}
+
+/* bingo */
+.bingo .navigation {
+  background: #ff7c00;
+  background: -moz-linear-gradient(left, #ff7c00 0%, #d24212 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #ff7c00), color-stop(100%, #d24212));
+  background: -webkit-linear-gradient(left, #ff7c00 0%, #d24212 100%);
+  background: -o-linear-gradient(left, #ff7c00 0%, #d24212 100%);
+  background: -ms-linear-gradient(left, #ff7c00 0%, #d24212 100%);
+  background: linear-gradient(to right, #ff7c00 0%, #d24212 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00c1ff', endColorstr='#488aca',GradientType=1 );
+}
+
+.bingo .banner-trapezium {
+  border-bottom: 288px solid #ff7c00;
+  border-bottom: 288px solid rgba(255, 124, 0, 0.85);
+}
+
+.bingo .version-2 .number {
+  color: #ff7c00;
+}
+
+.bingo .pod {
+  background: url(../img/bingo_pod_triangle.png) left bottom no-repeat #1e1e1e;
+  background: url(../img/bingo_pod_triangle.png) left bottom no-repeat rgba(30, 30, 30, 0.92);
+}
+
+.bingo .brand-img {
+  width: 156px;
+  height: 16px;
+  display: block;
+  background: url(../img/logo_bingo_black.png);
+  background-size: 156px 16px;
+}
+
+.bingo .banner-background {
+  background: url(../img/bingo_header.jpg);
+  background-position: right;
+}
+
+/* casino */
+.casino .navigation {
+  background: #ff0037;
+  background: -moz-linear-gradient(left, #ff0037 0%, #800019 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #ff0037), color-stop(100%, #800019));
+  background: -webkit-linear-gradient(left, #ff0037 0%, #800019 100%);
+  background: -o-linear-gradient(left, #ff0037 0%, #800019 100%);
+  background: -ms-linear-gradient(left, #ff0037 0%, #800019 100%);
+  background: linear-gradient(to right, #ff0037 0%, #800019 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00c1ff', endColorstr='#488aca',GradientType=1 );
+}
+
+.casino .banner-trapezium {
+  border-bottom: 288px solid #ff0037;
+  border-bottom: 288px solid rgba(255, 0, 55, 0.85);
+}
+
+.casino .version-2 .number {
+  color: #ff0037;
+}
+
+.casino .pod {
+  background: url(../img/casino_pod_triangle.png) left bottom no-repeat #1e1e1e;
+  background: url(../img/casino_pod_triangle.png) left bottom no-repeat rgba(30, 30, 30, 0.92);
+}
+
+.casino .brand-img {
+  width: 156px;
+  height: 16px;
+  display: block;
+  background: url(../img/logo_casino_black.png);
+  background-size: 156px 16px;
+}
+
+.casino .banner-background {
+  background: url(../img/casino_header.jpg);
+  background-position: right;
+}
+
+/* poker */
+.poker .navigation {
+  background: #9968cb;
+  background: -moz-linear-gradient(left, #9968cb 0%, #522287 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #9968cb), color-stop(100%, #522287));
+  background: -webkit-linear-gradient(left, #9968cb 0%, #522287 100%);
+  background: -o-linear-gradient(left, #9968cb 0%, #522287 100%);
+  background: -ms-linear-gradient(left, #9968cb 0%, #522287 100%);
+  background: linear-gradient(to right, #9968cb 0%, #522287 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00c1ff', endColorstr='#488aca',GradientType=1 );
+}
+
+.poker .banner-trapezium {
+  border-bottom: 288px solid #9968cb;
+  border-bottom: 288px solid rgba(153, 104, 203, 0.85);
+}
+
+.poker .version-2 .number {
+  color: #9968cb;
+}
+
+.poker .pod {
+  background: url(../img/poker_pod_triangle.png) left bottom no-repeat #1e1e1e;
+  background: url(../img/poker_pod_triangle.png) left bottom no-repeat rgba(30, 30, 30, 0.92);
+}
+
+.poker .brand-img {
+  width: 156px;
+  height: 16px;
+  display: block;
+  background: url(../img/logo_poker_black.png);
+  background-size: 156px 16px;
+}
+
+.poker .banner-background {
+  background: url(../img/poker_header.jpg);
+}
+
+@media only screen and (max-width: 767px) {
+  .arcade .banner {
+    background: #00c1ff;
+  }
+
+  .bingo .banner {
+    background: #ff7c00;
+  }
+
+  .casino .banner {
+    background: #ff0037;
+  }
+
+  .poker .banner {
+    background: #9968cb;
+  }
 }

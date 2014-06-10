@@ -2,6 +2,17 @@ $arcade-gradient-a: rgb(0,193,255);
 $arcade-gradient-b: rgb(72,138,202);
 $arcade-pod-number-color: rgb(0,153,255);
 
+$bingo-gradient-a: rgb(255,124,0);
+$bingo-gradient-b: rgb(210,66,18);
+$bingo-pod-number-color: rgb(255,124,0);
+
+$casino-gradient-a: rgb(255,0,55);
+$casino-gradient-b: rgb(128,0,25);
+$casino-pod-number-color: rgb(255,0,55);
+
+$poker-gradient-a: rgb(153,104,203);
+$poker-gradient-b: rgb(82,34,135);
+$poker-pod-number-color: rgb(153,104,203);
 
 @mixin linear-gradient($gradient-a, $gradient-b) {
 	background: $gradient-a;
@@ -19,6 +30,7 @@ $arcade-pod-number-color: rgb(0,153,255);
 	border-bottom: 288px solid rgba($red,$green,$blue,$alpha);
 }
 
+/* arcade */
 .arcade .navigation{
 	@include linear-gradient($arcade-gradient-a, $arcade-gradient-b); 
 }
@@ -29,4 +41,112 @@ $arcade-pod-number-color: rgb(0,153,255);
 
 .arcade .version-2 .number{
 	color: $arcade-pod-number-color;
+}
+
+.arcade .pod{
+	background: url(../img/pod_triangle.png) left bottom no-repeat #1e1e1e;
+	background: url(../img/pod_triangle.png) left bottom no-repeat rgba(30,30,30,0.92);
+}
+.arcade .brand-img{
+	width: 154px;
+	height: 16px;
+	display: block;
+	background: url(https://cache.promotions.betfair.com/media/english_uk/files/betgamecrm_353/images/logo-arcade-white.png);
+	background-size: 154px 16px;
+}
+.arcade .banner-background{
+	background: url(../img/arcade_header.jpg);
+}
+
+/* bingo */
+.bingo .navigation{
+	@include linear-gradient($bingo-gradient-a, $bingo-gradient-b); 
+}
+.bingo .banner-trapezium{
+	@include trapezium(255,124,0,0.85);
+}
+.bingo .version-2 .number{
+	color: $bingo-pod-number-color;
+}
+.bingo .pod{
+	background: url(../img/bingo_pod_triangle.png) left bottom no-repeat #1e1e1e;
+	background: url(../img/bingo_pod_triangle.png) left bottom no-repeat rgba(30,30,30,0.92);
+}
+.bingo .brand-img{
+	width: 156px;
+	height: 16px;
+	display: block;
+	background: url(../img/logo_bingo_black.png);
+	background-size: 156px 16px;
+}
+.bingo .banner-background{
+	background: url(../img/bingo_header.jpg);
+	background-position: right;
+}
+
+/* casino */
+.casino .navigation{
+	@include linear-gradient($casino-gradient-a, $casino-gradient-b); 
+}
+.casino .banner-trapezium{
+	@include trapezium(255,0,55,0.85);
+}
+.casino .version-2 .number{
+	color: $casino-pod-number-color;
+}
+.casino .pod{
+	background: url(../img/casino_pod_triangle.png) left bottom no-repeat #1e1e1e;
+	background: url(../img/casino_pod_triangle.png) left bottom no-repeat rgba(30,30,30,0.92);
+}
+.casino .brand-img{
+	width: 156px;
+	height: 16px;
+	display: block;
+	background: url(../img/logo_casino_black.png);
+	background-size: 156px 16px;
+}
+.casino .banner-background{
+	background: url(../img/casino_header.jpg);
+	background-position: right;
+}
+
+/* poker */
+.poker .navigation{
+	@include linear-gradient($poker-gradient-a, $poker-gradient-b); 
+}
+.poker .banner-trapezium{
+	@include trapezium(153,104,203,0.85);
+}
+.poker .version-2 .number{
+	color: $poker-pod-number-color;
+}
+.poker .pod{
+	background: url(../img/poker_pod_triangle.png) left bottom no-repeat #1e1e1e;
+	background: url(../img/poker_pod_triangle.png) left bottom no-repeat rgba(30,30,30,0.92);
+}
+.poker .brand-img{
+	width: 156px;
+	height: 16px;
+	display: block;
+	background: url(../img/logo_poker_black.png);
+	background-size: 156px 16px;
+}
+.poker .banner-background{
+	background: url(../img/poker_header.jpg);
+}
+
+
+@media only screen and (max-width: 767px) {
+	.arcade .banner{
+		background: $arcade-gradient-a;
+	}
+	.bingo .banner{
+		background: $bingo-gradient-a;
+	}
+	.casino .banner{
+		background: $casino-gradient-a;
+	}
+	.poker .banner{
+		background: $poker-gradient-a;
+	}
 }

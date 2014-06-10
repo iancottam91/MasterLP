@@ -67,6 +67,7 @@
 	padding-top: 6px;
 	padding-bottom: 8px;
 	margin-bottom: 18px;
+	opacity: 0.92;
 }
 .navigation a{
 	font-size: 12px;
@@ -80,6 +81,24 @@
 .navigation img{
 	height: 16px;
 }
+
+
+
+/* === Amends 1	header === */
+
+body{
+	margin-top: 48px;
+	background: url(../img/arcade_bg.jpg);
+}
+
+.navigation{
+	position: fixed;
+	z-index: 9;
+	width: 100%;
+	top: 0;
+	margin-bottom: 0;
+}
+
 
 /* banner styles */
 
@@ -115,10 +134,14 @@
 .fourth .text-container{
 	width: 38%;
 }
+.banner .cta-wrapper{
+	bottom: 28.8px;
+}
 
 /* box styles */
 
 .instruction-box{
+	position: relative;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding: 30px 30px 30px 60px;
@@ -126,6 +149,7 @@
 }
 .cta-box{
 	background: #1e1e1e;
+	background: rgba(30,30,30,0.92);
 	padding: 30px 0 30px 0;
 	position: relative;
 	box-sizing: content-box;
@@ -136,19 +160,24 @@
 }
 .full-width-container{
 	background: #1e1e1e;
-	float: left;
-	margin-left: 2px;
-	margin-right: 2px;
+	background: rgba(30,30,30,0.92);
+}
+.full-width-container .text-box{
+	background: none;
+}
+.full-width-container .cta-box{
+	background: none;
 }
 .text-box{
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding: 30px;
 	background: #1e1e1e;
+	background: rgba(30,30,30,0.92);
 }
-
 .container .instruction-box.version-2{
 	background: #1e1e1e;
+	background: rgba(30,30,30,0.92);
 	padding: 30px;
 }
 .version-2 .pod-headline{
@@ -157,6 +186,15 @@
 .version-2 .number{
 	color: #0099ff;
 	font-family: 'block_regular', sans-serif;
+}
+.pod-number{
+	position: absolute;
+	left: 5px;
+	color: white;
+	font-size: 66px;
+	line-height: 66px;
+	bottom: 0;
+	font-family: 'block_regular';
 }
 
 /* overlay styles */
@@ -226,20 +264,6 @@
 	bottom: 10%;
 }
 
-/* arcade specific */
-
-.arcade .pod1{
-	background: url(../img/arcade_pod1.jpg) left bottom no-repeat #1e1e1e;
-}
-
-.arcade .pod2{
-	background: url(../img/arcade_pod2.jpg) left bottom no-repeat #1e1e1e;
-}
-
-.arcade .pod3{
-	background: url(../img/arcade_pod3.jpg) left bottom no-repeat #1e1e1e;
-}
-
 /* Responsive */
 @media only screen and (max-width: 767px) {
 	.banner{
@@ -264,19 +288,11 @@
 	.container .banner-trapezium{
 		border: none;
 	}
-	.cta-box{
-		min-height: 100px;
-	}
 	.cta-wrapper{
 		width: 100%;
 	}
 	.cta-wrapper a{
 		width: 100%;
-	}
-	
-	/* arcade specific */
-	.arcade .banner{
-		background: rgb(0,193,255);
 	}
 	.reponsive-break{
 		display: none;
@@ -285,6 +301,44 @@
 	/* overlay */
 	.close-button {
 		top: -260px;
+	}
+
+	/* === Amends 1 === */
+
+	/* chevrons and ctas - this should be added to base css */
+	.btn.arrows:after {
+		right: auto;
+		padding-left: 0.5em;
+	}
+	.cta-button .btn{
+		margin-bottom: 16px;
+	}
+
+	/* cta positioning for it's own box */
+	.cta-box{
+		background: none;
+		padding: 0;
+		margin-top: -4px;
+		margin-bottom: 12px;
+	}
+	.cta-wrapper{
+		position: static;
+		margin-top: 0 !important;
+
+	}
+
+	/* Temporary */
+	.instruction-box .tncs{
+		color: black;
+	}
+	.instruction-box.cta-box{
+		margin-top: 4px;
+	}
+
+	/* Other */
+
+	.container .homepage-link{
+		display: none;
 	}
 
 }
