@@ -7,33 +7,44 @@
   background: -o-linear-gradient(left, #00c1ff 0%, #488aca 100%);
   background: -ms-linear-gradient(left, #00c1ff 0%, #488aca 100%);
   background: linear-gradient(to right, #00c1ff 0%, #488aca 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00c1ff', endColorstr='#488aca',GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF00C1FF', endColorstr='#FF488ACA',GradientType=1 );
 }
-
 .arcade .banner-trapezium {
   border-bottom: 288px solid #00c1ff;
   border-bottom: 288px solid rgba(0, 193, 255, 0.85);
 }
-
 .arcade .version-2 .number {
   color: #0099ff;
 }
-
 .arcade .pod {
-  background: url(../img/pod_triangle.png) left bottom no-repeat #1e1e1e;
-  background: url(../img/pod_triangle.png) left bottom no-repeat rgba(30, 30, 30, 0.92);
+  background: url(https://cache.promotions.betfair.com/media/english_uk/images/master_template/arcade_pod_triangle.png) left bottom no-repeat #1e1e1e;
+  background: url(https://cache.promotions.betfair.com/media/english_uk/images/master_template/arcade_pod_triangle.png) left bottom no-repeat rgba(30, 30, 30, 0.92);
 }
-
 .arcade .brand-img {
-  width: 154px;
+  width: 156px;
   height: 16px;
   display: block;
-  background: url(https://cache.promotions.betfair.com/media/english_uk/files/betgamecrm_353/images/logo-arcade-white.png);
-  background-size: 154px 16px;
+  background: url(https://cache.promotions.betfair.com/media/english_uk/images/logos/logo-arcade-white.png);
+  background-size: 156px 16px;
 }
-
 .arcade .banner-background {
-  background: url(../img/arcade_header.jpg);
+  background: url(https://cache.promotions.betfair.com/media/english_uk/images/master_template/arcade_header.jpg);
+}
+.arcade .text-container-right {
+  background: -moz-linear-gradient(left, rgba(0, 193, 255, 0.92) 0%, rgba(72, 138, 202, 0.92) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0, 193, 255, 0.92)), color-stop(100%, rgba(72, 138, 202, 0.92)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, rgba(0, 193, 255, 0.92) 0%, rgba(72, 138, 202, 0.92) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, rgba(0, 193, 255, 0.92) 0%, rgba(72, 138, 202, 0.92) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, rgba(0, 193, 255, 0.92) 0%, rgba(72, 138, 202, 0.92) 100%);
+  /* IE10+ */
+  background: linear-gradient(to right, rgba(0, 193, 255, 0.92) 0%, rgba(72, 138, 202, 0.92) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EB00C1FF', endColorstr='#EB00C1FF',GradientType=1 );
+  /* IE6-9 */
 }
 
 /* bingo */
@@ -45,34 +56,45 @@
   background: -o-linear-gradient(left, #ff7c00 0%, #d24212 100%);
   background: -ms-linear-gradient(left, #ff7c00 0%, #d24212 100%);
   background: linear-gradient(to right, #ff7c00 0%, #d24212 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00c1ff', endColorstr='#488aca',GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFF7C00', endColorstr='#FFD24212',GradientType=1 );
 }
-
 .bingo .banner-trapezium {
   border-bottom: 288px solid #ff7c00;
   border-bottom: 288px solid rgba(255, 124, 0, 0.85);
 }
-
 .bingo .version-2 .number {
   color: #ff7c00;
 }
-
 .bingo .pod {
-  background: url(../img/bingo_pod_triangle.png) left bottom no-repeat #1e1e1e;
-  background: url(../img/bingo_pod_triangle.png) left bottom no-repeat rgba(30, 30, 30, 0.92);
+  background: url(https://cache.promotions.betfair.com/media/english_uk/images/master_template/bingo_pod_triangle.png) left bottom no-repeat #1e1e1e;
+  background: url(https://cache.promotions.betfair.com/media/english_uk/images/master_template/bingo_pod_triangle.png) left bottom no-repeat rgba(30, 30, 30, 0.92);
 }
-
 .bingo .brand-img {
   width: 156px;
-  height: 16px;
+  height: 17px;
   display: block;
-  background: url(../img/logo_bingo_black.png);
-  background-size: 156px 16px;
+  background: url(https://cache.promotions.betfair.com/media/english_uk/images/logos/logo_bingo_black.png);
+  background-size: 156px 17px;
 }
-
 .bingo .banner-background {
-  background: url(../img/bingo_header.jpg);
+  background: url(https://cache.promotions.betfair.com/media/english_uk/images/master_template/bingo_header.jpg);
   background-position: right;
+}
+.bingo .text-container-right {
+  background: -moz-linear-gradient(left, rgba(255, 124, 0, 0.92) 0%, rgba(210, 66, 18, 0.92) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 124, 0, 0.92)), color-stop(100%, rgba(210, 66, 18, 0.92)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, rgba(255, 124, 0, 0.92) 0%, rgba(210, 66, 18, 0.92) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, rgba(255, 124, 0, 0.92) 0%, rgba(210, 66, 18, 0.92) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, rgba(255, 124, 0, 0.92) 0%, rgba(210, 66, 18, 0.92) 100%);
+  /* IE10+ */
+  background: linear-gradient(to right, rgba(255, 124, 0, 0.92) 0%, rgba(210, 66, 18, 0.92) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EBFF7C00', endColorstr='#EBFF7C00',GradientType=1 );
+  /* IE6-9 */
 }
 
 /* casino */
@@ -84,34 +106,45 @@
   background: -o-linear-gradient(left, #ff0037 0%, #800019 100%);
   background: -ms-linear-gradient(left, #ff0037 0%, #800019 100%);
   background: linear-gradient(to right, #ff0037 0%, #800019 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00c1ff', endColorstr='#488aca',GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFF0037', endColorstr='#FF800019',GradientType=1 );
 }
-
 .casino .banner-trapezium {
   border-bottom: 288px solid #ff0037;
   border-bottom: 288px solid rgba(255, 0, 55, 0.85);
 }
-
 .casino .version-2 .number {
   color: #ff0037;
 }
-
 .casino .pod {
-  background: url(../img/casino_pod_triangle.png) left bottom no-repeat #1e1e1e;
-  background: url(../img/casino_pod_triangle.png) left bottom no-repeat rgba(30, 30, 30, 0.92);
+  background: url(https://cache.promotions.betfair.com/media/english_uk/images/master_template/casino_pod_triangle.png) left bottom no-repeat #1e1e1e;
+  background: url(https://cache.promotions.betfair.com/media/english_uk/images/master_template/casino_pod_triangle.png) left bottom no-repeat rgba(30, 30, 30, 0.92);
 }
-
 .casino .brand-img {
   width: 156px;
-  height: 16px;
+  height: 17px;
   display: block;
-  background: url(../img/logo_casino_black.png);
-  background-size: 156px 16px;
+  background: url(https://cache.promotions.betfair.com/media/english_uk/images/logos/logo_casino_black.png);
+  background-size: 156px 17px;
 }
-
 .casino .banner-background {
-  background: url(../img/casino_header.jpg);
+  background: url(https://cache.promotions.betfair.com/media/english_uk/images/master_template/casino_header.jpg);
   background-position: right;
+}
+.casino .text-container-right {
+  background: -moz-linear-gradient(left, rgba(255, 0, 55, 0.92) 0%, rgba(128, 0, 25, 0.92) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 0, 55, 0.92)), color-stop(100%, rgba(128, 0, 25, 0.92)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, rgba(255, 0, 55, 0.92) 0%, rgba(128, 0, 25, 0.92) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, rgba(255, 0, 55, 0.92) 0%, rgba(128, 0, 25, 0.92) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, rgba(255, 0, 55, 0.92) 0%, rgba(128, 0, 25, 0.92) 100%);
+  /* IE10+ */
+  background: linear-gradient(to right, rgba(255, 0, 55, 0.92) 0%, rgba(128, 0, 25, 0.92) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EBFF0037', endColorstr='#EBFF0037',GradientType=1 );
+  /* IE6-9 */
 }
 
 /* poker */
@@ -123,33 +156,44 @@
   background: -o-linear-gradient(left, #9968cb 0%, #522287 100%);
   background: -ms-linear-gradient(left, #9968cb 0%, #522287 100%);
   background: linear-gradient(to right, #9968cb 0%, #522287 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00c1ff', endColorstr='#488aca',GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF9968CB', endColorstr='#FF522287',GradientType=1 );
 }
-
 .poker .banner-trapezium {
   border-bottom: 288px solid #9968cb;
   border-bottom: 288px solid rgba(153, 104, 203, 0.85);
 }
-
 .poker .version-2 .number {
   color: #9968cb;
 }
-
 .poker .pod {
-  background: url(../img/poker_pod_triangle.png) left bottom no-repeat #1e1e1e;
-  background: url(../img/poker_pod_triangle.png) left bottom no-repeat rgba(30, 30, 30, 0.92);
+  background: url(https://cache.promotions.betfair.com/media/english_uk/images/master_template/poker_pod_triangle.png) left bottom no-repeat #1e1e1e;
+  background: url(https://cache.promotions.betfair.com/media/english_uk/images/master_template/poker_pod_triangle.png) left bottom no-repeat rgba(30, 30, 30, 0.92);
 }
-
 .poker .brand-img {
   width: 156px;
-  height: 16px;
+  height: 18px;
   display: block;
-  background: url(../img/logo_poker_black.png);
-  background-size: 156px 16px;
+  background: url(https://cache.promotions.betfair.com/media/english_uk/images/logos/logo_poker_black.png);
+  background-size: 156px 18px;
 }
-
 .poker .banner-background {
-  background: url(../img/poker_header.jpg);
+  background: url(https://cache.promotions.betfair.com/media/english_uk/images/master_template/poker_header.jpg);
+}
+.poker .text-container-right {
+  background: -moz-linear-gradient(left, rgba(153, 104, 203, 0.92) 0%, rgba(82, 34, 135, 0.92) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(153, 104, 203, 0.92)), color-stop(100%, rgba(82, 34, 135, 0.92)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, rgba(153, 104, 203, 0.92) 0%, rgba(82, 34, 135, 0.92) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, rgba(153, 104, 203, 0.92) 0%, rgba(82, 34, 135, 0.92) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, rgba(153, 104, 203, 0.92) 0%, rgba(82, 34, 135, 0.92) 100%);
+  /* IE10+ */
+  background: linear-gradient(to right, rgba(153, 104, 203, 0.92) 0%, rgba(82, 34, 135, 0.92) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EB9968CB', endColorstr='#EB9968CB',GradientType=1 );
+  /* IE6-9 */
 }
 
 @media only screen and (max-width: 767px) {

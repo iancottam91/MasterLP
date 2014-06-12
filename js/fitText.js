@@ -63,8 +63,7 @@
 
             usedElts = usedElts.add(elt);
 
-            elt
-                .css('font-size', inc + 'px');
+            elt.css('font-size', inc + 'px');
 
             resizeFuncs.push({
                 restartTick: function() {

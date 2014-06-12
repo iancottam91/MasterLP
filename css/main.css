@@ -21,6 +21,9 @@
 .orange{
 	color: #ffb80c;
 }
+.white {
+	color: #ffffff;
+}
 
 /* font styles */
 
@@ -37,12 +40,19 @@
 	margin-bottom: 0;
 	margin-top: 15px;
 }
-.pod-headline{
+.banner .sub-header.small{
+
+	font-size: 24px;
+	font-family: 'informa_medium', Arial, sans-serif;
+
+
+	}
+.main section h3 {
 	color: #ffb80c;
 	font-family: 'informa_medium', Arial, sans-serif;
 	font-size: 24px;
 }
-.pod-copy{
+.main section p {
 	color: #fafafa;
 	font-size: 14px;
 	line-height: normal;
@@ -53,13 +63,17 @@
 	font-size: 12px;
 	text-decoration: none;
 }
-.informa{
+.informa {
 	font-family: 'informa_medium', Arial, sans-serif;
 }
 .block-reg{
 	font-family: 'block_regular', sans-serif;
+	text-transform: uppercase;
 }
 
+.small {
+	font-size: 10px;
+}
 /* navigation styles */
 
 .navigation{
@@ -88,8 +102,8 @@
 
 body{
 	margin-top: 48px;
-	background: url(../img/arcade_bg.jpg);
 }
+
 
 .navigation{
 	position: fixed;
@@ -98,7 +112,6 @@ body{
 	top: 0;
 	margin-bottom: 0;
 }
-
 
 /* banner styles */
 
@@ -111,7 +124,6 @@ body{
 }
 .banner-background{
  	height: 288px;
- 	background: url('../img/headerImg.jpg');
 }
 .banner-trapezium{
 	border-right: 288px solid transparent;
@@ -136,6 +148,29 @@ body{
 }
 .banner .cta-wrapper{
 	bottom: 28.8px;
+}
+
+/* banner tile */
+.text-container-right{
+	position: absolute;
+	right: 25px;
+	bottom: 25px;
+	height: 343px; /* Set this to the height of the bg image - 50px */
+	width: 343px;  /* Set this to the height of the bg image - 50px */
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 25px;
+}
+.banner.tile{
+	height: 393px; /* Set this to the height of the bg image */
+}
+.banner.tile .cta-wrapper{
+	bottom: 50px;
+}
+.banner-background.tile{
+	height: 393px; /* Set this to the height of the bg image */
+	background: url(https://cache.promotions.betfair.com/media/english_uk/images/bgamecrm_19/header.jpg);
 }
 
 /* box styles */
@@ -197,75 +232,29 @@ body{
 	font-family: 'block_regular';
 }
 
-/* overlay styles */
-
-.box-pad{
-	height: 1px;
-}
-.overlay-message{
-	top: 100px;
-}
-.overlay-message .box{
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	padding: 20px;
-	background-color: #000000;
-	position: relative;
-	height: 260px;
-	border: 1px solid #333;
-	outline: 1px solid #000;
-}
-.overlay-message .left{
-	margin-right: 0;
-}
-.overlay-message .right{
-	margin-left: 0;
-	font-size: 15px;
-	line-height: 1;
-}
-.popup-content{
-	color: #ffffff;
-}
-.popup-content h2{
-	font-size: 24px;
-	line-height: 21px;
-	margin-bottom: 30px;
-}
-.close-button{
-	font-size: 24px;
-	color: #fff;
-	position: absolute;
-	right: 0px;
-	top: 0px;
-	padding: 10px;
-	cursor: pointer
-}
-#username{
-	margin-bottom: 10px;
-	width: 100%;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-#password{
-	margin-bottom: 0;
-	width: 100%;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-.forgotten-info{
-	font-size: 12px;
-}
-.forgotten-info a{
-	color: #6495ED;
-}
-.cta-wrapper-modal{
-	position: absolute;
-	right: 0;
-	bottom: 10%;
-}
 
 /* Responsive */
 @media only screen and (max-width: 767px) {
+
+	.overlay-message {
+	top: 15px;
+	}
+
+	.text-container-right{
+		width: 100%;
+		height: 100%;
+		position: static;
+	}
+	.banner.tile .cta-wrapper{
+		position: absolute;
+		bottom: 0;
+	}
+	.tile .text-container-right{
+		padding-bottom: 90px; 
+	}
+	.banner.tile{
+		height: auto;
+	}
 	.banner{
 		position: relative;
 		height: auto;

@@ -1,4 +1,4 @@
-var LP = (function(){
+var MasterLP = (function(){
 		// make all boxes equal height
 
 	return{
@@ -13,7 +13,8 @@ var LP = (function(){
 
 			$(container).each(function() {
 			    $el = $(this);
-			    $($el).height('auto')
+			    $($el).height('auto');
+
 			    topPosition = $el.position().top;
 			    if (currentRowStart != topPosition) {
 			    	for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
@@ -58,6 +59,31 @@ var LP = (function(){
 				tenthOfBannerHeight = banner.height()/10;
 
 			headlineText.css({"bottom" : tenthOfBannerHeight, "left" : tenthOfBannerHeight})				
+		},
+
+		addBrandLink: function(){
+			var brand = $('body > div').attr('class');
+			var brandA = $('.brand-img');
+			var homepageLink = $('.homepage-link a');
+			switch(brand){
+				case "arcade":
+					brandA.attr('href', 'https://arcade.betfair.com');
+					homepageLink.attr('href', 'https://arcade.betfair.com');
+					break;
+				case "bingo":
+					brandA.attr('href', 'https://bingo.betfair.com');
+					homepageLink.attr('href', 'https://bingo.betfair.com');
+					break;
+				case "casino":
+					brandA.attr('href', 'https://casino.betfair.com');
+					homepageLink.attr('href', 'https://casino.betfair.com');
+					break;
+				case "poker":
+					brandA.attr('href', 'https://poker.betfair.com');
+					homepageLink.attr('href', 'https://poker.betfair.com');
+					break;
+			
+			} 
 		}
 
 	}
@@ -68,32 +94,64 @@ var pods = '.pod, .instruction-box.cta-box';
 var fullWidthBoxes = '.text-box, .full-width-container .cta-box';
 
 $(window).resize(function(){
-	LP.equaliseColumnHeights(fullWidthBoxes);
-	LP.equaliseColumnHeights(pods);
+	MasterLP.equaliseColumnHeights(fullWidthBoxes);
+	MasterLP.equaliseColumnHeights(pods);
 });
 
-LP.equaliseColumnHeights(fullWidthBoxes);
-LP.equaliseColumnHeights(pods);
-LP.positionCta();
-LP.positionBannerText();
+$(window).load(function(){
 
-// Call fit text on the banner headline
-fitText(".headline", {'increment': 1, 'maxSize': 75, 'lhratio': 0.81});
+	// Call fit text on the banner headline
+	fitText(".third .headline", {'increment': 1, 'maxSize': 75, 'lhratio': 0.81});
+	fitText(".fourth .headline", {'increment': 1, 'maxSize': 70, 'lhratio': 0.81});
 
-// Call owl carousel
+});
+$('document').ready(function(){
+	var bodyBg = $('.brand').css('background-image').replace(/^url\(['"]?/,'').replace(/['"]?\)$/,'');
+ 	$.backstretch(bodyBg);
+ 	$('.brand').css('background', 'transparent');
 
-$("#carousel").owlCarousel({
+MasterLP.equaliseColumnHeights(fullWidthBoxes);
+	MasterLP.addBrandLink();
+	MasterLP.equaliseColumnHeights(pods);
+	MasterLP.positionCta();
+	MasterLP.positionBannerText();
+	
+	// Call owl carousel
+	$("#carousel").owlCarousel({
 
-    autoPlay: 3000, //Set AutoPlay to 3 seconds
-		 
-    items : 6,
-    itemsDesktop : [976,6],
-    itemsDesktopSmall : [975,4],
-    itemsMobile:	[479,2]
+	    autoPlay: 3000, //Set AutoPlay to 3 seconds 
+	    items : 6,
+	    itemsDesktop : [976,6],
+	    itemsDesktopSmall : [975,4],
+	    itemsMobile:	[479,2]
+
+	});
+
+	// Call Modal Plugin
+	$('.modal-open').modalise({closeButton: false});
+	
+
+	// Interface - Checkboxes
+	$('.interface input[type=checkbox]').each(function () {
+		$(this).click(function(){
+			var brandid = $(this).data("element");
+			$('*[data-brandid="'+brandid+'"]').toggle();
+
+		})
+	});
+	// Interface - Brand selector
+	$('.interface select.brand').each(function () {
+		$(this).change(function(){
+			jQuery('.brand').attr('class', 'brand '+$(this).val());
+
+			//var bodyBg = $('.brand').css('background-image').replace(/^url\(['"]?/,'').replace(/['"]?\)$/,'');
+			//console.log('bodyBg');
+
+		})
+	});		
+
+
 
 });
 
-// Call Modal Plugin
-
-$('.modal-open').modalise({closeButton: false});
 

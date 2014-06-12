@@ -1,0 +1,29 @@
+{		
+    "uk" : {
+        "lang-play-now": "Play now",
+        "lang-more-info": "More info",
+        "lang-opt-in": "Opt in",
+        "lang-log-in": "Log in",
+        "lang-bet-now": "Bet now",
+        "lang-username": "username",
+        "lang-password": "password"
+    },
+    "de" : {
+        "lang-play-now": "Jetzt spielen",
+        "lang-more-info": "Mehr info",
+        "lang-opt-in": "Anmelden",
+        "lang-log-in": "Log in",
+        "lang-bet-now": "Jetzt wetten",
+        "lang-username": "Benutzername",
+        "lang-password": "Kennwort"
+    },
+    "ru" : {
+        "lang-play-now": "Играть",
+        "lang-more-info": "Узнайте больше",
+        "lang-opt-in": "Opt in",
+        "lang-log-in": "Войти",
+        "lang-bet-now": "Играть",
+        "lang-username": "username",
+        "lang-password": "password"
+    }
+}

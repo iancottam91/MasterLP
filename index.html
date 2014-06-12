@@ -1,12 +1,21 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<meta name="keywords" content="" />
-		<meta name="description" content="" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>LP Template</title>
+
+	<!-- Basic Page Needs
+  	================================================== -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Betfair</title>
 		
-		<!-- scripts -->
+
+	<!-- Mobile Specific Metas
+  	================================================== -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+	<!-- Stately & jQuery
+  	================================================== -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script type="text/javascript" src="https://cache.promotions.betfair.com/media/english_uk/files/js/stately_1.09.js"></script>
 		<script type="text/javascript" src="https://cache.promotions.betfair.com/media/english_uk/files/js/bflp_1.13h.js"></script>
@@ -16,22 +25,47 @@
 			LP.start();
 		</script>
 
+
+	<!-- HTML5 Shiv
+  	================================================== -->
 		<!--[if lt IE 9]>
-			<script src="js/html5shiv.min.js"></script>
-		<![endif]-->
-		<!--[if IE 9]>
-			<script src="js/html5shiv.min.js"></script>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 
-		<!-- styles -->
+
+	<!-- CSS
+  	================================================== -->
 		<link rel="stylesheet" href="https://promotions.betfair.com/media/english_uk/files/skeleton/css/base.css">
-		<link rel="stylesheet" href="https://promotions.betfair.com/media/english_uk/files/skeleton/css/skeleton-iframe.css">
+		<link rel="stylesheet" href="css/skeleton-master.css">
 		<link rel="stylesheet" href="css/brand.css">
 		<link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="css/calculations.css">
-		<link rel="stylesheet" href="css/owl-carousel.css">
 		<link rel="stylesheet" href="css/overlay.css">
+		<link rel="stylesheet" href="css/owl-carousel.css">
+
+
+	<!-- Custom / Page specific CSS
+  	================================================== -->
+		<style>
+		.arcade {
+			background-image: url('img/arcade_bg.jpg');
+		}
+		.poker {
+			background-image: url('img/poker_bg.jpg');
+		}
+		.casino {
+			background-image: url('img/casino_bg.jpg');
+		}
+		.bingo {
+			background-image: url('img/bingo_bg.jpg');
+		}
+		</style>
+
 	</head>
+
+
+
+	<!-- FONT - For local testing only - use CMS font loading options when uploading
+    ================================================== -->
 
 	<style type="text/css">
 		@font-face {font-family: 'block_regular'; src: url('https://cache.promotions.betfair.com/media/english_uk/fonts/block-en.eot'); src: url('https://cache.promotions.betfair.com/media/english_uk/fonts/block-en.eot?#iefix') format('embedded-opentype'), url('https://cache.promotions.betfair.com/media/english_uk/fonts/block-en.woff') format('woff'), url('https://cache.promotions.betfair.com/media/english_uk/fonts/block-en.ttf') format('truetype'); font-weight: normal; font-style: normal; } h1, h2, h3, h4, h5, h6, h7, h8 {font-weight: normal; font-style: normal;} h1, h2, h3, h4, h5, h6, h7, h8 {font-weight: normal; font-style: normal;} 
@@ -40,28 +74,108 @@
 		@font-face {font-family: 'informa_bold'; src: url('https://cache.promotions.betfair.com/media/english_uk/fonts/informaprobold-en.eot'); src: url('https://cache.promotions.betfair.com/media/english_uk/fonts/informaprobold-en.eot?#iefix') format('embedded-opentype'), url('https://cache.promotions.betfair.com/media/english_uk/fonts/informaprobold-en.woff') format('woff'), url('https://cache.promotions.betfair.com/media/english_uk/fonts/informaprobold-en.ttf') format('truetype'); font-weight: normal; font-style: normal; } h1, h2, h3, h4, h5, h6, h7, h8 {font-weight: normal; font-style: normal;}
 	</style>
 
-	<body class="casino">
 
-		<!-- overlay login box -->
+
+
+
+
+
+
+	<body>
+
+
+
+
+	<!-- Set brand and language here
+    ================================================== -->
+	<div class="bingo brand" data-lang="uk">
+
+
+		<!-- Terms box
+	    ================================================== -->
 		<div class="container">
-			<div id="login-box" class="container overlay-message hide">
-				<div class="three columns box-pad"></div>
+			<div id="terms" class="overlay-message hide">
+				<div class="sixteen columns more-info-overlay" style="background: white;">
+					<div class="modal-close close-button" style="color: black;">x</div>
+				        <h2>TERMS AND CONDITIONS</h2>
+				      	<section>
+				        <p class="question">Lorem ipsum dolor sit amet?</p>
+						<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<p class="question">Sed ut perspiciatis unde omnis?</p>
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+						<p class="question">Inventore veritatis et quasi?</p>
+						<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi.</p>
+						<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi.</p>
+						
+						<table>
+							<tbody>
+								<tr>
+									<th>Samba Selector Star Rating</th>
+									<th>Example</th>
+									<th>Samba Selector bonus</th>
+								</tr>
+								<tr>
+									<td>1 star</td>
+									<td>Algeria</td>
+									<td>Starts at £1,000</td>
+								</tr>
+								<tr>
+									<td>2 stars</td>
+									<td>Cameroon</td>
+									<td>Starts at £800</td>
+								</tr>
+								<tr>
+									<td>3 stars</td>
+									<td>Belgium</td>
+									<td>Starts at £600</td>
+								</tr>
+								<tr>
+									<td>4 stars</td>
+									<td>England</td>
+									<td>Starts at £400</td>
+								</tr>
+								<tr>
+									<td>5 stars</td>
+									<td>Brazil</td>
+									<td>Starts at £100</td>
+								</tr>
+							</tbody>
+						</table>
+						<p class="bullet-title">VIP Samba Selection Points</p>
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+						<p class="question">For standard terms and conditions relating to a Casino bonus, please <a href="https://promotions.betfair.com/vip-cas-samba-selector-bonus">click here.</a> </p>
+						<p class="question">For standard terms and conditions relating to an Arcade bonus, please <a href="https://promotions.betfair.com/vip-arc-samba-selector-bonus">click here.</a></p>
+						<p class="terms"><strong><a href="https://casino.betfair.com/promotions/standardtermsandconditions">Standard Promotional Terms and Conditions apply.</a></strong></p>
+				    </section>
+				</div>	
+			</div>
+		</div>
+
+
+
+	<!-- Overlay box
+    ================================================== -->
+		<div class="container">
+			<div id="login-box" class="offset-by-three overlay-message hide">
 				<div class="popup-content">
-					<div class="five columns box left">
+					<div class="modal-close close-button">x</div>
+					<div class="five columns overlay-box left">
 						<form>
 							<div class="session-n expired-n loaded-y">		
-								<h2>Log In</h2>
+								<h2 class="lang-log-in">Log In</h2>
 								<input placeholder="Betfair username" id="username" type="text" />
 								<input placeholder="Betfair password" id="password" type="password" />
-								<p class="forgotten-info text-center">Forgotten your <a href="https://identitysso.betfair.com/view/recoverusername" target="_blank">Username</a>/<a href="https://identitysso.betfair.com/view/recoverpassword" target="_blank">Password</a>?</p>
+								<p class="forgotten-info text-center">Forgotten your <a class="lang-username" href="https://identitysso.betfair.com/view/recoverusername" target="_blank">Username</a>/<a class="lang-password" href="https://identitysso.betfair.com/view/recoverpassword" target="_blank">Password</a>?</p>
 							</div>
 							<div class="cta-wrapper-modal" >
-								<a href="#" class="btn btn-primary arrows session-n optinbutton">Log In</a>
+								<a href="#" class="btn btn-primary arrows session-n optinbutton lang-log-in">Log In</a>
 							</div>		
 						</form>
 					</div>
-					<div class="five columns box right">
-						<div class="modal-close close-button">x</div>
+					<div class="five columns overlay-box right">
 						<h2>New to Betfair?</h2>
 						<p>You need to open an account before you can play for real money.</p>
 						<p>Opening an account only takes a few minutes.</p>
@@ -70,20 +184,92 @@
 						</div>
 					</div>
 				</div>
-				<div class="three columns box-pad"></div>		
 			</div>
 		</div>
-		<nav class="navigation">
+
+<style>
+.interface {
+	background-color: white;
+	position: fixed;
+	width: 100px;
+	border-radius: 0 10px 10px 0;
+	padding: 10px;
+}
+
+.interface input[type="checkbox"] {
+	display: inline;
+	width: 30px;
+}
+
+</style>
+	
+
+	<!-- Interface
+    ================================================== -->
+		<div class="interface">
+		<select class='brand'>
+		    <option value="" disabled="disabled" selected="selected">Brand</option>
+		    <option value="arcade">Arcade</option>
+		    <option value="casino">Casino</option>
+		    <option value="poker">Poker</option>
+		    <option value="bingo">Bingo</option>
+		</select>
+
+
+		<select class='language'>
+		    <option value="" disabled="disabled" selected="selected">Language</option>
+		    <option value="1">UK</option>
+		    <option value="2">DE</option>
+		</select>
+		<select class='preset'>
+		    <option value="" disabled="disabled" selected="selected">Preset</option>
+		    <option value="0">All</option>
+		    <option value="1">Preset 1</option>
+		    <option value="2">Preset 2</option>
+		</select>
+
+
+		<input type="checkbox" data-element="0" checked/>Top Nav</br>
+		<input type="checkbox" data-element="1" checked/>Header 1</br>
+		<input type="checkbox" data-element="2" checked/>Header 2</br>
+		<input type="checkbox" data-element="3" checked/>Header 3</br>
+
+		<input type="checkbox" data-element="4" checked/>Module 1</br>
+		<input type="checkbox" data-element="5" checked/>Module 2</br>
+		<input type="checkbox" data-element="6" checked/>Module 3</br>
+		<input type="checkbox" data-element="7" checked/>Module 4</br>
+		<input type="checkbox" data-element="8" checked/>Module 5</br>
+		<input type="checkbox" data-element="9" checked/>Module 6</br>
+		<input type="checkbox" data-element="10" checked/>Module 7</br>
+		<input type="checkbox" data-element="11" checked/>Module 8</br>
+		<input type="checkbox" data-element="12" checked/>Module 9</br>
+		<input type="checkbox" data-element="13" checked/>Module 10</br>
+		<input type="checkbox" data-element="14" checked/>Module 11</br>
+		<input type="checkbox" data-element="15" checked/>Module 12</br>
+		<input type="checkbox" data-element="16" checked/>Carousel</br>
+
+
+		</div>
+
+
+
+	<!-- Top Navigation Strip
+    ================================================== -->
+		<nav class="navigation" data-brandid="0">
 			<div class="container">
 				<div class="eight columns">
-					<a href="#" class="brand-img"></a>
+					<a href="#" target="_blank" class="brand-img"></a>
 				</div>
 				<div class="eight columns text-right homepage-link">
-					<a href="#"><p>Take me to the homepage</p></a>
+					<a href="#" target="_blank"><p>Take me to the homepage</p></a>
 				</div>
 			</div>
 		</nav>
-		<header class="container">
+
+
+	<!-- Header v1
+    ================================================== -->
+		<header class="container 1" data-brandid="1">
 			<div class="sixteen columns banner-background margin-bottom-small">
 			</div>
 			<div class="sixteen columns banner third margin-bottom-small">
@@ -97,233 +283,291 @@
 				</div>
 				<div class="cta-wrapper text-right">
 					<!-- Button to launch login box -->
-					<a data-target="login-box" class="btn btn-large btn-primary arrows optin-n session-n loaded-y modal-open" href="#">Opt In</a>
+					<a data-target="login-box" class="btn btn-large btn-primary arrows optin-n session-n loaded-y modal-open lang-opt-in" href="#">Opt In</a>
 					<!-- Button to opt in box -->
-					<a data-target="login-box" class="btn btn-large btn-primary arrows optin-n session-y loaded-y optinbutton" href="#">Opt In</a>
+					<a data-target="login-box" class="btn btn-large btn-primary arrows optin-n session-y loaded-y optinbutton lang-opt-in" href="#">Opt In</a>
 					<!-- Button to link to the promotion once logged in -->
-					<a data-target="login-box" class="btn btn-large btn-primary arrows optin-y session-y loaded-y" href="#">Play now</a>
+					<a data-target="login-box" class="btn btn-large btn-primary arrows optin-y session-y loaded-y lang-play-now" href="#">Play now</a>
 				</div>
 			</div>
 		</header>
-		<header class="container">
-			<div class="sixteen columns banner-background margin-bottom-small">
+
+
+
+	<!-- Header v3
+    ================================================== -->
+		<header class="container" data-brandid="3">
+			<div class="sixteen columns banner-background tile margin-bottom-small">
 			</div>
-			<div class="sixteen columns banner fourth margin-bottom-small">
-				<div class="banner-trapezium">
-					<div class="text-container">
-						<h1 class="headline orange">&pound;2 Million <br class="reponsive-break">Reward Pot</h1>
-						<!-- <p class="sub-header informa">7<sup>th</sup> March is a day of the month</p> -->
-						<!-- <p class="sub-header block-reg">7<sup>th</sup> March</p> -->
-					</div>
+			<div class="sixteen columns banner tile fourth margin-bottom-small">
+				<div class="text-container-right">
+					<h1 class="headline white">&pound;2 Million <br class="reponsive-break">Reward Pot</h1>
+					<p class="sub-header block-reg white">7<sup>th</sup> March</p> 
+					 <p class="sub-header informa small white">7th March is a day of the month</p> 
 				</div>
 				<div class="cta-wrapper text-right">
-					<a class="btn btn-large btn-primary arrows" href="#">Play now</a>
+					<a data-target="login-box" class="btn btn-large btn-primary arrows modal-open lang-play-now" href="#">Play now</a>
 				</div>
 			</div>
 		</header>
-		<div class="container">
+		
+		<div class="container main">
 
-			<!-- Numbered instructions. No CTA -->
-			<div class="one-third column instruction-box pod version-1">
+
+	<!-- Numbered instructions. No CTA
+    ================================================== -->
+		<section data-brandid="4">
+			<div class="one-third column instruction-box pod version-1 ">
 				<span class="pod-number">1</span>
-				<h3 class="pod-headline">24-28px Sub</h3>
-				<p class="pod-copy">14-18px Body text, Informa Pro.</p>
-				<p class="pod-copy">14-18px Body text, Informa Pro.</p>
-				<p class="pod-copy">14-18px Body text, Informa Pro.</p>
+				<h3>24-28px Sub</h3>
+				<p>14-18px Body text, Informa Pro.</p>
 			</div>
 			<div class="one-third column instruction-box pod version-1">
 				<span class="pod-number">2</span>
-				<h3 class="pod-headline">24-28px Sub</h3>
-				<p class="pod-copy">14-18px Body text, Informa Pro.</p>
+				<h3>24-28px Sub</h3>
+				<p>14-18px Body text, Informa Pro.</p>
 			</div>
 			<div class="one-third column instruction-box pod version-1">
 				<span class="pod-number">3</span>
-				<h3 class="pod-headline">24-28px Sub</h3>
-				<p class="pod-copy">14-18px Body text, Informa Pro.</p>
+				<h3>24-28px Sub</h3>
+				<p>14-18px Body text, Informa Pro.</p>
 			</div>
+		</section>
 
-			<!-- Numbered instructions. With CTA -->
+
+	<!-- Numbered instructions. With CTA
+    ================================================== -->
+		<section data-brandid="5">
 			<div class="four columns instruction-box pod version-1">
 				<span class="pod-number">1</span>
-				<h3 class="pod-headline">24-28px Sub</h3>
-				<p class="pod-copy">14-18px Body text, Informa Pro.</p>
+				<h3>24-28px Sub</h3>
+				<p>14-18px Body text, Informa Pro.</p>
 			</div>
 			<div class="four columns instruction-box pod version-1">
 				<span class="pod-number">2</span>
-				<h3 class="pod-headline">24-28px Sub</h3>
-				<p class="pod-copy">14-18px Body text, Informa Pro.</p>
+				<h3>24-28px Sub</h3>
+				<p>14-18px Body text, Informa Pro.</p>
 			</div>
 			<div class="four columns instruction-box pod version-1">
 				<span class="pod-number">3</span>
-				<h3 class="pod-headline">24-28px Sub</h3>
-				<p class="pod-copy">14-18px Body text, Informa Pro.</p>
+				<h3>24-28px Sub</h3>
+				<p>14-18px Body text, Informa Pro.</p>
 			</div>
 			<div class="four columns instruction-box cta-box">
 				<div class="cta-wrapper text-center">
-					<div class="cta-button"><a class="btn btn-large btn-primary arrows" href="#">Play now</a></div>
-					<a class="tncs" href="#">Terms and conditions</a>
+					<div class="cta-button"><a class="btn btn-large btn-primary arrows lang-play-now" href="#">Play now</a></div>
+					<a class="tncs modal-open" data-target="terms" href="#">Terms and conditions</a>
 				</div>
 			</div>
+		</section>
 
-			<!-- Numbered instructions. With CTA. Bottom aligned -->
+
+	<!-- Numbered instructions. With CTA. Bottom aligned
+    ================================================== -->
+		<section data-brandid="6">
 			<div class="four columns instruction-box pod version-1">
 				<span class="pod-number">1</span>
-				<h3 class="pod-headline">24-28px Sub</h3>
-				<p class="pod-copy">14-18px Body text, Informa Pro.</p>
+				<h3>24-28px Sub</h3>
+				<p>14-18px Body text, Informa Pro.</p>
 			</div>
 			<div class="four columns instruction-box pod version-1">
 				<span class="pod-number">2</span>
-				<h3 class="pod-headline">24-28px Sub</h3>
-				<p class="pod-copy">14-18px Body text, Informa Pro.</p>
+				<h3>24-28px Sub</h3>
+				<p>14-18px Body text, Informa Pro.</p>
 			</div>
 			<div class="four columns instruction-box pod version-1">
 				<span class="pod-number">3</span>
-				<h3 class="pod-headline">24-28px Sub</h3>
-				<p class="pod-copy">14-18px Body text, Informa Pro.14-18px Body text, Informa Pro.14-18px Body text, Informa Pro.</p>
+				<h3>24-28px Sub</h3>
+				<p>14-18px Body text, Informa Pro.</p>
 			</div>
 			<div class="four columns instruction-box cta-box text-right">
 				<div class="cta-wrapper text-center">
-					<div class="cta-button"><a class="btn btn-large btn-primary arrows" href="#">Play now</a></div>
-					<a class="tncs" href="#">Terms and conditions</a>
+					<div class="cta-button"><a class="btn btn-large btn-primary arrows lang-play-now" href="#">Play now</a></div>
+					<a class="tncs modal-open" data-target="terms" href="#">Terms and conditions</a>
 				</div>
 			</div>
+		</section>
 
-			<!-- Numbered instructions. With CTA. Version 2 -->
+
+	<!-- Numbered instructions. With CTA. Version 2
+    ================================================== -->
+		<section data-brandid="7">
 			<div class="four columns instruction-box pod version-2">
-				<h3 class="pod-headline"><span class="number">1).</span> 24-28px Sub</h3>
-				<p class="pod-copy">14-18px Body text, Informa Pro.</p>
+				<h3><span class="number">1).</span> 24-28px Sub</h3>
+				<p>14-18px Body text, Informa Pro.</p>
 			</div>
 			<div class="four columns instruction-box pod version-2">
-				<h3 class="pod-headline"><span class="number">2).</span> 24-28px Sub</h3>
-				<p class="pod-copy">14-18px Body text, Informa Pro.</p>
+				<h3><span class="number">2).</span> 24-28px Sub</h3>
+				<p>14-18px Body text, Informa Pro.</p>
 			</div>
 			<div class="four columns instruction-box pod version-2">
-				<h3 class="pod-headline"><span class="number">3).</span> 24-28px Sub</h3>
-				<p class="pod-copy">14-18px Body text, Informa Pro.</p>
+				<h3><span class="number">3).</span> 24-28px Sub</h3>
+				<p>14-18px Body text, Informa Pro.</p>
 			</div>
 			<div class="four columns instruction-box cta-box">
 				<div class="cta-wrapper text-center">
-					<div class="cta-button"><a class="btn btn-large btn-primary arrows" href="#">Play now</a></div>
-					<a class="tncs" href="#">Terms and conditions</a>
+					<div class="cta-button"><a class="btn btn-large btn-primary arrows lang-play-now" href="#">Play now</a></div>
+					<a class="tncs modal-open" data-target="terms" href="#">Terms and conditions</a>
 				</div>
 			</div>
+		</section>
 
-			<!-- Numbered instructions. With CTA. Bottom aligned. Version 2 -->
+
+	<!-- Numbered instructions. With CTA. Bottom aligned. Version 2
+    ================================================== -->
+		<section data-brandid="8">
 			<div class="four columns instruction-box pod version-2">
-				<h3 class="pod-headline"><span class="number">1).</span> 24-28px Sub</h3>
-				<p class="pod-copy">14-18px Body text, Informa Pro.</p>
+				<h3><span class="number">1).</span> 24-28px Sub</h3>
+				<p>14-18px Body text, Informa Pro.</p>
 			</div>
 			<div class="four columns instruction-box pod version-2">
-				<h3 class="pod-headline"><span class="number">2).</span> 24-28px Sub</h3>
-				<p class="pod-copy">14-18px Body text, Informa Pro.</p>
+				<h3><span class="number">2).</span> 24-28px Sub</h3>
+				<p>14-18px Body text, Informa Pro.</p>
 			</div>
 			<div class="four columns instruction-box pod version-2">
-				<h3 class="pod-headline"><span class="number">3).</span> 24-28px Sub</h3>
-				<p class="pod-copy">14-18px Body text, Informa Pro.14-18px Body text, Informa Pro.14-18px Body text, Informa Pro.</p>
+				<h3><span class="number">3).</span> 24-28px Sub</h3>
+				<p>14-18px Body text, Informa Pro.</p>
 			</div>
 			<div class="four columns instruction-box cta-box text-right">
 				<div class="cta-wrapper text-center">
-					<div class="cta-button"><a class="btn btn-large btn-primary arrows" href="#">Play now</a></div>
-					<a class="tncs" href="#">Terms and conditions</a>
+					<div class="cta-button"><a class="btn btn-large btn-primary arrows lang-play-now" href="#">Play now</a></div>
+					<a class="tncs modal-open" data-target="terms" href="#">Terms and conditions</a>
 				</div>
 			</div>
+		</section>
 
-			<!-- Full with box. CTA center aligned -->
-			<div class="sixteen column full-width-container margin-bottom-small">
-				<div class="twelve columns aplha text-box margin-left-zero">
-					<h3 class="pod-headline">24-28px Sub header, Informa Pro, sentence case</h3>
-					<p class="pod-copy">14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro.</p>
-					<p class="pod-copy">14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro.</p>
+
+	<!-- Full with box, no CTA
+    ================================================== -->
+		<section data-brandid="9">
+			<div class="sixteen columns full-width-container margin-bottom-small">
+				<div class="sixteen columns alpha text-box margin-left-zero">
+					<h3>24-28px Sub header, Informa Pro, sentence case</h3>
+					<p>14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nibh eros, vulputate ac odio ut, laoreet pretium nulla. Cras quis risus interdum, tempor velit quis, fermentum lectus. 14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nibh eros, vulputate ac odio ut, laoreet pretium nulla. Cras quis risus interdum, tempor velit quis, fermentum lectus.</p>
+					<p>14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nibh eros, vulputate ac odio ut, laoreet pretium nulla. Cras quis risus interdum, tempor velit quis, fermentum lectus. 14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nibh eros, vulputate ac odio ut, laoreet pretium nulla. Cras quis risus interdum, tempor velit quis, fermentum lectus.</p>
+				</div>
+			</div>
+		</section>
+
+
+	<!-- Full with box. CTA center aligned
+    ================================================== -->
+		<section data-brandid="10">
+			<div class="sixteen columns margin-bottom-small full-width-container">
+				<div class="twelve columns alpha text-box margin-left-zero">
+					<h3>24-28px Sub header, Informa Pro, sentence case</h3>
+					<p>14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nibh eros, vulputate ac odio ut, laoreet pretium nulla. Cras quis risus interdum, tempor velit quis, fermentum lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nibh eros, vulputate ac odio ut, laoreet pretium nulla. Cras quis risus interdum, tempor velit quis, fermentum lectus.
+					</p>
 				</div>
 				<div class="four columns omega cta-box text-right margin-right-zero">
 					<div class="cta-wrapper text-center">
-						<div class="cta-button"><a class="btn btn-large btn-primary arrows" href="#">Play now</a></div>
-						<a class="tncs" href="#">Terms and conditions</a>
+						<div class="cta-button"><a class="btn btn-large btn-primary arrows lang-play-now" href="#">Play now</a></div>
+						<a class="tncs modal-open" data-target="terms" href="#">Terms and conditions</a>
 					</div>
 				</div>
 			</div>
+		</section>
 
-			<!-- Full with box. CTA center aligned -->
-			<div class="sixteen column margin-bottom-small full-width-container">
-				<div class="twelve columns aplha text-box margin-left-zero">
-					<h3 class="pod-headline">24-28px Sub header, Informa Pro, sentence case</h3>
-					<p class="pod-copy">14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro.</p>
-					<p class="pod-copy">14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro.</p>
-					<p class="pod-copy">14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro.</p>
-					<p class="pod-copy">14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro.</p>
-					<p class="pod-copy">14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro.</p>
-				</div>
-				<div class="four columns omega cta-box text-right margin-right-zero">
-					<div class="cta-wrapper text-center">
-						<div class="cta-button"><a class="btn btn-large btn-primary arrows" href="#">Play now</a></div>
-						<a class="tncs" href="#">Terms and conditions</a>
-					</div>
-				</div>
-			</div>
 
-			<!-- Twelve / four text boxes. -->
+	<!-- Full width text box
+    ================================================== -->
+		<section data-brandid="11">
 			<div class="twelve columns text-box margin-bottom-small">
-				<h3 class="pod-headline">24-28px Sub</h3>
-				<p class="pod-copy">14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro.</p>
+				<h3>24-28px Sub</h3>
+				<p>14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nibh eros, vulputate ac odio ut, laoreet pretium nulla. Cras quis risus interdum, tempor velit quis, fermentum lectus. 14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nibh eros, vulputate ac odio ut, laoreet pretium nulla. Cras quis risus interdum, tempor velit quis, fermentum lectus. 14-18px Body text, Informa Pro.</p>
 			</div>
 			<div class="four columns text-box margin-bottom-small">
-				<h3 class="pod-headline">24-28px Sub</h3>
-				<p class="pod-copy">14-18px Body text, Informa Pro.</p>
+				<h3>24-28px Sub</h3>
+				<p>14-18px Body text, Informa Pro.</p>
 			</div>
+		</section>
 
-			<!-- Eight / eight text boxes. -->
+
+
+	<!-- Twelve / four text boxes.
+    ================================================== -->
+		<section data-brandid="12">
+			<div class="twelve columns text-box margin-bottom-small">
+				<h3>24-28px Sub</h3>
+				<p>14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nibh eros, vulputate ac odio ut, laoreet pretium nulla. Cras quis risus interdum, tempor velit quis, fermentum lectus. 14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nibh eros, vulputate ac odio ut, laoreet pretium nulla. Cras quis risus interdum, tempor velit quis, fermentum lectus. 14-18px Body text, Informa Pro.</p>
+			</div>
+			<div class="four columns text-box margin-bottom-small">
+				<h3>24-28px Sub</h3>
+				<p>14-18px Body text, Informa Pro.</p>
+			</div>
+		</section>
+
+
+
+	<!-- Eight / eight text boxes.
+    ================================================== -->
+		<section data-brandid="13">
 			<div class="eight columns text-box margin-bottom-small">
-				<h3 class="pod-headline">24-28px Sub</h3>
-				<p class="pod-copy">14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro.</p>
-				<p class="pod-copy">14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro.</p>
-				<p class="pod-copy">14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro.</p>
+				<h3>24-28px Sub</h3>
+				<p>14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nibh eros, vulputate ac odio ut, laoreet pretium nulla. Cras quis risus interdum, tempor velit quis, fermentum lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nibh eros, vulputate ac odio ut, laoreet pretium nulla. Cras quis risus interdum, tempor velit quis, fermentum lectus.</p>
+
 			</div>
 			<div class="eight columns text-box margin-bottom-small">
-				<h3 class="pod-headline">24-28px Sub</h3>
-				<p class="pod-copy">14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro.</p>
-				<p class="pod-copy">14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro.</p>
-				<p class="pod-copy">14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro.</p>
-				<p class="pod-copy">14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro.</p>
+				<h3>24-28px Sub</h3>
+				<p>14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nibh eros, vulputate ac odio ut, laoreet pretium nulla. Cras quis risus interdum, tempor velit quis, fermentum lectus. Lorem ipsum dolor sit amet, consectetur adip</p>
+			
 			</div>
+		</section>
 
-			<!-- Four / four / four / four text boxes. -->
-			<div class="four columns text-box margin-bottom-small">
-				<h3 class="pod-headline">24-28px Sub</h3>
-				<p class="pod-copy">14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro.</p>
-			</div>
-			<div class="four columns text-box margin-bottom-small">
-				<h3 class="pod-headline">24-28px Sub</h3>
-				<p class="pod-copy">14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro.</p>
-			</div>
-			<div class="four columns text-box margin-bottom-small">
-				<h3 class="pod-headline">24-28px Sub</h3>
-				<p class="pod-copy">14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro.</p>
-			</div>
-			<div class="four columns text-box margin-bottom-small">
-				<h3 class="pod-headline">24-28px Sub</h3>
-				<p class="pod-copy">14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro.</p>
-			</div>
 
-			<!-- Four / four / four / four text boxes. Version 2-->
+
+	<!-- Four / four / four / four text boxes.
+    ================================================== -->
+		<section data-brandid="14">
+			<div class="four columns text-box margin-bottom-small">
+				<h3>24-28px Sub</h3>
+				<p>14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro.</p>
+			</div>
+			<div class="four columns text-box margin-bottom-small">
+				<h3>24-28px Sub</h3>
+				<p>14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro.</p>
+			</div>
+			<div class="four columns text-box margin-bottom-small">
+				<h3>24-28px Sub</h3>
+				<p>14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro.</p>
+			</div>
+			<div class="four columns text-box margin-bottom-small">
+				<h3>24-28px Sub</h3>
+				<p>14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro.</p>
+			</div>
+		</section>
+
+
+	<!-- Four / four / four / four text boxes. Version 2
+    ================================================== -->
+		<section data-brandid="15">
 			<div class="four columns text-box margin-bottom-large version-2">
-				<h3 class="pod-headline">24-28px Sub</h3>
-				<p class="pod-copy">14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro.</p>
+				<h3>24-28px Sub</h3>
+				<p>14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro.</p>
 			</div>
 			<div class="four columns text-box margin-bottom-large version-2">
-				<h3 class="pod-headline">24-28px Sub</h3>
-				<p class="pod-copy">14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro.</p>
+				<h3>24-28px Sub</h3>
+				<p>14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro.</p>
 			</div>
 			<div class="four columns text-box margin-bottom-large version-2">
-				<h3 class="pod-headline">24-28px Sub</h3>
-				<p class="pod-copy">14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro.</p>
+				<h3>24-28px Sub</h3>
+				<p>14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro.</p>
 			</div>
 			<div class="four columns text-box margin-bottom-large version-2">
-				<h3 class="pod-headline">24-28px Sub</h3>
-				<p class="pod-copy">14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro.</p>
+				<h3>24-28px Sub</h3>
+				<p>14-18px Body text, Informa Pro. 14-18px Body text, Informa Pro.</p>
 			</div>
+		</section>
 
 		</div>
-		<footer class="container">
+
+
+
+
+
+	<!-- Footer Carousel
+    ================================================== -->
+		<footer class="container" data-brandid="16">
 			<div class="carousel-panel margin-bottom-large sixteen columns">
 				<div id="carousel">
 					<div class="item">
@@ -354,9 +598,24 @@
 			</div>
 		</footer>
 
-		<script type="text/javascript" src="js/owl-carousel.js"></script>
-		<script type="text/javascript" src="js/fitText.js"></script>
+
+
+
+	<!-- End brand wrapper
+    ================================================== -->
+</div>
+
+
+
+
+	<!-- Javascript
+    ================================================== -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+		<script type="text/javascript" src="https://cache.promotions.betfair.com/media/english_uk/files/jquery_plugins/owl_carousel/js/owl.carousel.js"></script>
+		<script type="text/javascript" src="https://cache.promotions.betfair.com/media/english_uk/files/jquery_plugins/fit_text/fitText.js"></script>
 		<script type="text/javascript" src="js/overlay.js"></script>
+		<script type="text/javascript" src="js/translations.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
+
 	</body>
 </html>

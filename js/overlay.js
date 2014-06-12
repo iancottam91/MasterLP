@@ -9,7 +9,7 @@
         // Get DOM elements
         var overlay = $(".overlay"),
             overlayMessage = $('.overlay-message'),
-            closeButtons = $(".modal-close"); // The overlay background and any custom close buttons
+            closeButtons = $(".modal-close, .overlay"); // The overlay background and any custom close buttons
 
         // Activate close buttons
         closeButtons.on('click',function(){
@@ -34,7 +34,9 @@
             }
 
             // Show the relevant modal window on clicking the open button
-        	openButton.on('click',function(){
+        	openButton.on('click',function(e){
+                e.preventDefault();
+                 $("html, body").animate({ scrollTop: 0 }, "slow");
                 var targetSelector = '#' + $(this).attr('data-target');
                 $(targetSelector + ', .overlay').toggleClass("hide");
             });
